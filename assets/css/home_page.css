@@ -1,0 +1,34 @@
+
+@import "style.css";
+
+.page-content {
+	width:100%;
+}
+
+.home-section {
+	background-image: linear-gradient(180deg, var(--blue-medium), 90%, var(--skyblue-light));
+    height: 100vh;
+    /* display: flex;
+	align-items: center; */
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	color: var(--white);
+	font-size: var(--fs-title);
+	/* margin-top: 25px;
+	margin-bottom: 2%; */
+}
+
+.container__home {
+	padding: 8%;
+}
+
+#profile-icon {
+	width: 100%;
+}
+
+#app {
+	font-size: var(--fs-typewriter);
+}

@@ -7,9 +7,14 @@
     <meta name="description" content="Jessica Trans Portfolio">
     <meta name="keywords" content="Jessica Trans, UC Davis">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/home_page.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/width.css">
+
     <link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css">
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     
     <title>Jessica Trans</title>
 
@@ -26,7 +31,7 @@
     <!-- icons -->
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 
-    <script defer type="text/javascript" src="js/scripts.js"></script>
+    <script defer type="text/javascript" src="./assets/js/scripts.js"></script>
 
 
     <!-- Scripts -->
@@ -34,7 +39,18 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <div class="topnav" id="nav">
+    <!-- <nav class="navbar container" id="nav">
+        <a href="#home-section" class="nav-item" id="name">JESSICA TRANS</a>
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerIcon()">
+            <i class="fa fa-bars"></i>
+        </a>
+        
+
+        <a href="#about-section" class="nav-item others">ABOUT</a>
+        <a href="#project-section" class="nav-item others">PROJECTS</a>
+        <a href="#contact-section" class="nav-item others">CONTACT</a>
+    </nav> -->
+    <!-- <div class="topnav" id="nav">
         <div class="part">
             <a href="#home-section" class="nav-item" id="first-part">JESSICA TRANS</a>
             <a href="javascript:void(0);" class="icon" onclick="hamburgerIcon()">
@@ -46,14 +62,34 @@
             <a href="#project-section" class="nav-item others">PROJECTS</a>
             <a href="#contact-section" class="nav-item others">CONTACT</a>
         </div>
-    </div>
+    </div> -->
 
     <div class="page-content">
         <!--Home Page-->
-        <section class="intro" id="home-section">
-            <div class="container column">
+        <section class="home-section o-grid container__home">
+            <div class="container o-grid__row">
+                <div class="o-grid__col u-1/2">
+                    <img src="./assets/img/couch.png" id="profile-icon">
+                </div>
+                <div class="o-grid__col u-1/2">
+                    <div class="container o-grid__row">
+                        <h1 class="title">JESSICA TRANS</h1>
+                    </div>
+                    <div class="container o-grid__row">
+                        <p id="app"></p>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="container o-grid__row">
+                <nav class="addspace"></nav>
+                <a href="#about-section" class="arrow"></a>
+            </div>
+            
+            
+            <!-- <div class="container column">
                 <div class="container row" id="landing-container">
-                    <img src="img/couch.png" id="profile-icon">
+                    <img src="./assets/img/couch.png" id="profile-icon">
                     <div class="container column" id="landing-text">
                         <h1 class="title">JESSICA TRANS</h1>
                         <p id="app"></p>
@@ -61,14 +97,14 @@
                 </div>
                 <nav class="addspace"></nav>
                 <a href="#about-section" class="arrow"></a>
-            </div>
+            </div> -->
         </section>
 
         <!--About Page-->
         <section id="about-section">
             <h1 class="subtitle">ABOUT ME</h1>
             <div class="container row-reverse contents">
-                <img src="img/bunny.png" class="about-img">
+                <img src="./assets/img/bunny.png" class="about-img">
                 <div class="container column tile">
                     <p class="bodytext about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error porro autem doloremque ut id dicta, magni, ad, obcaecati voluptate modi iste? Neque officia consequuntur rerum assumenda reprehenderit incidunt dolores?</p>   
                     <button class="buttons button1">RESUME</button>
@@ -84,10 +120,10 @@
         </section>
 
         <!--Project Page-->
-        <section id="project-section">
+        <!-- <section id="project-section">
             <h1 class="subtitle subtitle-space">PROJECTS</h1>
             <div class="container row contents">
-                <img src="img/woman_working_cropped.png" class="about-img" id="project-pic">
+                <img src="./assets/img/woman_working_cropped.png" class="about-img" id="project-pic">
                 <div class="container column tile">
                     <p class="bodytext about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error porro autem doloremque ut id dicta, magni, ad, obcaecati voluptate modi iste? Neque officia consequuntur rerum assumenda reprehenderit incidunt dolores?</p>   
                     <button class="buttons button1">GITHUB</button>
@@ -95,21 +131,21 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
         <!--Contact Page-->
-        <section id="contact-section">
+        <!-- <section id="contact-section">
             <h1 class="subtitle subtitle-space">CONTACT</h1>
             <div class="container column">
                 <p class="bodytext center">Lorem ipsum dolor sit amet consectetur adipisicing elit.Facilis error porro autem doloremque ut id dicta, magni, ad, obcaecati voluptate modi iste? Neque officia consequuntur rerum assumenda reprehenderit incidunt dolores?</p>   
                 
             </div>
-            <img src="img/email-icon.png" class="icons">
+            <img src="./assets/img/email-icon.png" class="icons"> -->
 
             <!-- <a href="#home-section" class="arrow" id="up-arrow"></a> -->
 
 
-        </section>
+        <!-- </section> -->
 
 
 
