@@ -63,30 +63,34 @@ typewriter.typeString('hello!')
 =================================
 */
 
-// changes all u-1/2 to u-1/1 when 64em for screen
+// changes all u-1/2 to u-1/1 when 74em for screen
 function updateClassBasedOnScreenSize() {
     var changeSize = document.querySelectorAll('.o-grid__col');
     let changeCount = 0;
     // Check if the media query condition is met
-    if (window.matchMedia("(max-width: 64em)").matches) {
+    if (window.matchMedia("(max-width: 74em)").matches) {
         // If the condition is met, change the class to "u-1/1"
         changeSize.forEach(element => {
-            if (changeCount < 2) {
-                element.classList.replace('u-1/2', 'u-1/1');
-                changeCount++;
-            }
+            // if (changeCount < 2) {
+            //     element.classList.replace('u-1/2', 'u-1/1');
+            //     changeCount++;
+            // }
+            element.classList.replace('u-1/2', 'u-1/1');
+
         });
-    changeCount = 0;
+    // changeCount = 0;
     //   document.querySelector('.o-grid__col').classList.replace('u-1/2', 'u-1/1');
     } else {
         // If the condition is not met, change the class back to "u-1/2"
         changeSize.forEach(element => {
-            if (changeCount < 2) {
-                element.classList.replace('u-1/1', 'u-1/2');
-                changeCount++;
-            }
+            // if (changeCount < 2) {
+            //     element.classList.replace('u-1/1', 'u-1/2');
+            //     changeCount++;
+            // }
+            element.classList.replace('u-1/1', 'u-1/2');
+
         });
-        changeCount = 0;
+        // changeCount = 0;
         // document.querySelector('.o-grid__col').classList.replace('u-1/1', 'u-1/2');
     }
 }

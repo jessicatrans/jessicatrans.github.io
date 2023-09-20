@@ -19,6 +19,7 @@
 
     --fs-title: 3vw;
     --fs-title__tablet: 5.7vw;
+    --fs-subtitle: 3vw;
     --fs-typewriter: 1.5vw;
     --fs-typewriter__tablet: 2.9vw;
 
@@ -122,8 +123,62 @@ body {
 	align-content: center;
 }
 
-@media screen and (max-width: 64em) {
+.subtitle {
+    font-family: var(--ff-barlow);
+	background: -webkit-linear-gradient(var(--blue-dark), var(--skyblue-medium));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--fs-1);
+    font-weight: var(--fw-semibold);
+    letter-spacing: 6px;
+}
+
+.bodytext {
+    font-size: var(--fs-4);
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+	padding: 8%;
+}
+
+.img {
+    max-width: 130%;
+    height: auto;
+    /* width: 40vw; */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 74em) {
+    .page {
+        padding: 8% 0;
+    }
+
     .container {
         flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .img {
+        max-width: none;
+        width: 40vw;
+
+    }
+
+    .bodytext {
+        padding-top: 2rem;
     }
 }
