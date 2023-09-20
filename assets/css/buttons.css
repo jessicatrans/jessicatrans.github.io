@@ -6,10 +6,14 @@
 	font-size: var(--fs-button);
 	width: 10vw;
 	height: 3vw;
-	border-radius: 1.875rem 1.875rem;
+	border-radius: 4rem 4rem;
 	box-shadow: rgba(0, 0, 0, 0.24) 0 0.188rem 0.5rem;
 	border: none!important;
 	margin-top: 1.3rem;
+}
+
+.buttons:hover {
+	opacity: 70%;
 }
 
 @media screen and (max-width: 74em) {
