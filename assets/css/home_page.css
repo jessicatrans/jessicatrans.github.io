@@ -8,8 +8,9 @@
 .home-section {
 	background-image: linear-gradient(180deg, var(--blue-medium), 90%, var(--skyblue-light));
     height: 100vh;
-    /* display: flex;
-	align-items: center; */
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .title {
@@ -17,8 +18,6 @@
 	justify-content: center;
 	color: var(--white);
 	font-size: var(--fs-title);
-	/* margin-top: 25px;
-	margin-bottom: 2%; */
 }
 
 #app {
@@ -49,9 +48,7 @@
 	border: solid var(--black);
 	border-color: var(--white);
 	border-width: 0 0.18rem 0.18rem 0;
-	display: inline-block;
 	padding: 0.625rem;
-	transform: rotate(45deg);
   	-webkit-transform: rotate(45deg);
   	transition: 0.3s;
   	animation: bounce 3s infinite;
@@ -64,7 +61,7 @@
 }
 
 .addspace {
-	margin: 4vh;
+	margin: 1vh;
 }
 
 @media screen and (max-width: 64em) {
@@ -94,9 +91,4 @@
 	.arrow {
 		padding: 0.55rem;
 	}
-
-	.addspace {
-		margin: 4rem;
-	}
-
 }
