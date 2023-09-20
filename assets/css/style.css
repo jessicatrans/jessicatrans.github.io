@@ -31,7 +31,7 @@
     --fs-5: 1.42rem; /* 27 / 19 */
     --fs-6: 1.15rem; /* 22 / 19 */
 
-    --fs-text: 1rem; /* 19 */
+    --fs-text: 1.5vw;
     --fs-text__tablet: 2.5vw;
 
     --fw-normal: 400;
@@ -136,7 +136,7 @@ body {
 }
 
 .bodytext {
-    font-size: var(--fs-4);
+    font-size: var(--fs-text);
 }
 
 .page {
