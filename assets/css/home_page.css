@@ -60,10 +60,6 @@
 	transform: scale(1.1) rotate(45deg);
 }
 
-.addspace {
-	margin: 1vh;
-}
-
 @media screen and (max-width: 64em) {
 	.o-grid__col {
 		margin-top: 50px;
