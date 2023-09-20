@@ -99,7 +99,7 @@
     }
 }
 
-@media all and (min-width: 75em) {
+@media all and (min-width: 74em) {
     .u-3\/4\@xl {
         width: 75%;
     }

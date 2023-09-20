@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 74em) {
 	.o-grid__col {
-		margin-top: 50px;
+		margin-top: 4vw;
 	}
 
 	.container__home {

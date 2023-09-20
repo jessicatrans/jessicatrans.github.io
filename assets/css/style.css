@@ -20,6 +20,7 @@
     --fs-title: 3vw;
     --fs-title__tablet: 5.7vw;
     --fs-subtitle: 3vw;
+    --fs-subtitle__tablet: 6vw;
     --fs-typewriter: 1.5vw;
     --fs-typewriter__tablet: 2.9vw;
 
@@ -31,6 +32,7 @@
     --fs-6: 1.15rem; /* 22 / 19 */
 
     --fs-text: 1rem; /* 19 */
+    --fs-text__tablet: 2.5vw;
 
     --fw-normal: 400;
     --fw-semibold: 600;
@@ -128,15 +130,13 @@ body {
 	background: -webkit-linear-gradient(var(--blue-dark), var(--skyblue-medium));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: var(--fs-1);
+    font-size: var(--fs-subtitle);
     font-weight: var(--fw-semibold);
     letter-spacing: 6px;
 }
 
 .bodytext {
     font-size: var(--fs-4);
-    display: flex;
-    justify-content: center;
 }
 
 .page {
@@ -146,7 +146,6 @@ body {
 .img {
     max-width: 130%;
     height: auto;
-    /* width: 40vw; */
 }
 
 .center {
@@ -157,6 +156,7 @@ body {
 .reverse {
     display: flex;
     flex-direction: row;
+    gap: 3vw;
 }
 
 @media screen and (max-width: 74em) {
@@ -175,10 +175,14 @@ body {
     .img {
         max-width: none;
         width: 40vw;
+    }
 
+    .subtitle {
+        font-size: var(--fs-subtitle__tablet);
     }
 
     .bodytext {
-        padding-top: 2rem;
+        text-align: center;
+        font-size: var(--fs-text__tablet);
     }
 }
