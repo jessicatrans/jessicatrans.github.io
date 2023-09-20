@@ -7,6 +7,7 @@
     --gray: #8d8d8d;
     --gray-medium: #575757;
     --gray-dark: #454545;
+    --blue: #4579A1;
     --blue-medium: #020E22;
     --blue-dark: #010814;
     --skyblue-light: #B6EAFB;
@@ -33,6 +34,9 @@
 
     --fs-text: 1.5vw;
     --fs-text__tablet: 2.5vw;
+
+    --fs-button: 1.3vw;
+    --fs-button__tablet: 2vw;
 
     --fw-normal: 400;
     --fw-semibold: 600;
@@ -156,6 +160,10 @@ body {
 .reverse {
     display: flex;
     flex-direction: row;
+}
+
+.space {
+    display: flex;
     gap: 3vw;
 }
 
@@ -184,5 +192,9 @@ body {
     .bodytext {
         text-align: center;
         font-size: var(--fs-text__tablet);
+    }
+
+    .reverse {
+        gap: 3vw;
     }
 }
