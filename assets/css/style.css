@@ -1,3 +1,4 @@
+
 :root {
     /* color */
     --white: #FFFFFF;
@@ -16,8 +17,10 @@
     /* typography */
     --ff-barlow: 'Barlow', sans-serif;
 
-    --fs-title: 3vw; 
+    --fs-title: 3vw;
+    --fs-title__tablet: 5.7vw;
     --fs-typewriter: 1.5vw;
+    --fs-typewriter__tablet: 2.9vw;
 
     --fs-1: 2.94rem; /* 56 / 19 */
     --fs-2: 2.47rem; /* 47 / 19 */
@@ -36,6 +39,7 @@
     --section-padding: 3.75rem;
 
     /* responsive, breakpoints */
+    /* these variables won't work!! */
     --bp-small:  36em; /*  576 / 19 */
     --bp-medium: 48em; /*  768 / 19 */
     --bp-large:  62em; /*  992 / 19 */
@@ -118,41 +122,8 @@ body {
 	align-content: center;
 }
 
-/* @media (min-width: var(--bp-small)) {
+@media screen and (max-width: 64em) {
     .container {
-        max-width: 540px;
+        flex-direction: column;
     }
 }
-@media (min-width: var(--bp-medium)) {
-    .container {
-        max-width: 720px;
-    }
-}
-@media (min-width: var(--bp-large)) {
-    .container {
-        max-width: 960px;
-    }
-}
-@media (min-width: var(--bp-xl)) {
-    .container {
-        max-width: 1140px;
-    }
-} */
-
-.row {
-	flex-direction: row;
-}
-
-.row-reverse {
-	flex-direction: row-reverse;
-}
-
-.column {
-	flex-direction: column;
-}
-
-.center {
-	text-align: center;
-
-}
-

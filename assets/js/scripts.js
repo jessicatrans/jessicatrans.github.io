@@ -1,6 +1,12 @@
 // Typewriter created by Tameem Safi.
 // source: https://github.com/tameemsafi/typewriterjs
 
+/* 
+========================
+    Typewriter
+========================
+*/
+
 var app = document.getElementById('app');
 
 var typewriter = new Typewriter(app, {
@@ -33,6 +39,9 @@ typewriter.typeString('hello!')
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
+    .typeString("my cat's name is sago!")
+    .pauseFor(1000)
+    .deleteAll()
     .typeString("i also like to draw and design.")
     .pauseFor(1000)
     .deleteAll()
@@ -45,6 +54,56 @@ typewriter.typeString('hello!')
     .pauseFor(1000)
     .deleteAll()
     .start();
+
+
+
+/* 
+=================================
+    Tablet View: u-1/2 to u-1/1
+=================================
+*/
+
+// changes all u-1/2 to u-1/1 when 64em for screen
+function updateClassBasedOnScreenSize() {
+    var changeSize = document.querySelectorAll('.o-grid__col');
+    let changeCount = 0;
+    // Check if the media query condition is met
+    if (window.matchMedia("(max-width: 64em)").matches) {
+        // If the condition is met, change the class to "u-1/1"
+        changeSize.forEach(element => {
+            if (changeCount < 2) {
+                element.classList.replace('u-1/2', 'u-1/1');
+                changeCount++;
+            }
+        });
+    changeCount = 0;
+    //   document.querySelector('.o-grid__col').classList.replace('u-1/2', 'u-1/1');
+    } else {
+        // If the condition is not met, change the class back to "u-1/2"
+        changeSize.forEach(element => {
+            if (changeCount < 2) {
+                element.classList.replace('u-1/1', 'u-1/2');
+                changeCount++;
+            }
+        });
+        changeCount = 0;
+        // document.querySelector('.o-grid__col').classList.replace('u-1/1', 'u-1/2');
+    }
+}
+  
+// Call the function initially to set the class based on the screen size
+updateClassBasedOnScreenSize();
+
+// Add an event listener to update the class when the screen size changes
+window.addEventListener('resize', updateClassBasedOnScreenSize);
+
+// Additionally, you can call the function when the page loads
+window.addEventListener('load', updateClassBasedOnScreenSize);
+
+
+
+
+
 
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 // window.onscroll = function() {scrollFunction()};

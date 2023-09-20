@@ -3,15 +3,14 @@
    ========================================================================== */
 
 .o-grid {
-  /* clear: both; */
-  width: 100%;
-  /* margin-top: var(--base-spacing-unit); */
+    /* clear: both; */
+    width: 100%;
+    /* margin-top: var(--base-spacing-unit); */
 
 }
 
 /* Row */
 .o-grid__row {
-    display: flex;
     margin: 5%;
 
     /* margin-left: var(--base-spacing-unit);
@@ -22,13 +21,7 @@
 /* Column */
 
 .o-grid__col {
-  /* padding-left: var(--base-spacing-unit);
-  padding-top: var(--base-spacing-unit); */
-  padding: 0 3%;
-}
-
-@media screen and (max-width: 992px) {
-	.o-grid__row {
-		flex-direction: column;
-	}
+    /* padding-left: var(--base-spacing-unit);
+    padding-top: var(--base-spacing-unit); */
+    padding: 0 3%;
 }
