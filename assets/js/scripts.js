@@ -63,12 +63,12 @@ typewriter.typeString('hello!')
 =================================
 */
 
-// changes all u-1/2 to u-1/1 when 64em for screen
+// changes all u-1/2 to u-1/1 when 74em for screen
 function updateClassBasedOnScreenSize() {
     var changeSize = document.querySelectorAll('.o-grid__col');
     let changeCount = 0;
     // Check if the media query condition is met
-    if (window.matchMedia("(max-width: 64em)").matches) {
+    if (window.matchMedia("(max-width: 74em)").matches) {
         // If the condition is met, change the class to "u-1/1"
         changeSize.forEach(element => {
             if (changeCount < 2) {
