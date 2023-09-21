@@ -138,6 +138,10 @@ body {
     height: auto;
 }
 
+.about-img {
+    border-radius: 4rem 4rem;
+}
+
 .center {
     display: flex;
     justify-content: center;
