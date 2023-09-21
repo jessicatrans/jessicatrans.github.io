@@ -19,6 +19,7 @@
     /* typography */
     --ff-barlow: 'Barlow', sans-serif;
 
+    /* font */
     --fs-title: 3vw;
     --fs-title__tablet: 5.7vw;
     --fs-subtitle: 3vw;
@@ -36,8 +37,8 @@
     --fs-footerText: 1vw;
     --fs-footerText__tablet: 2vw;
 
-    --fs-sections: 2rem;
-    --fs-sections__tablet: 5vw;
+    --fs-sections: 1.8rem;
+    --fs-sections__tablet: 4vw;
 
     --fs-1: 2.94rem; /* 56 / 19 */
     --fs-2: 2.47rem; /* 47 / 19 */
@@ -56,50 +57,22 @@
     --fw-semibold: 600;
     --fw-bold: 700;
 
-    /* spacing */
+    --base-font-size:                 19px;
+    --base-line-height:               1.5;
+
+    /* 
+    ========================
+        Guides
+    ========================
+    */
+
     --section-padding: 3.75rem;
 
     /* responsive, breakpoints */
-    /* these variables won't work!! */
     --bp-small:  36em; /*  576 / 19 */
     --bp-medium: 48em; /*  768 / 19 */
     --bp-large:  62em; /*  992 / 19 */
-    --bp-xl:     75em; /* 1200 / 19 */
-
-    /* #BASE
-   ========================================================================== */
-
-    /* Font */
-
-    --base-font-size:                 19px;
-    --base-line-height:               1.6;
-
-    /* Spacing */
-
-    --base-spacing-unit-factor-xl:     1.75;
-    --base-spacing-unit-factor-large:  1.5;
-    --base-spacing-unit-factor-medium: 1.0;
-    --base-spacing-unit-factor-small:  0.5;
-    --base-spacing-unit-factor-xs:     0.25;
-    --base-spacing-unit-factor-xxs:    0.125;
-
-    --base-spacing-unit:               var(--base-line-height) + rem;
-    --base-spacing-unit-xl:            var(--base-line-height) * var(--base-spacing-unit-factor-xl) + rem;
-    --base-spacing-unit-large:         var(--base-line-height) * var(--base-spacing-unit-factor-large) + rem;
-    --base-spacing-unit-medium:        var(--base-line-height) * var(--base-spacing-unit-factor-medium) + rem;
-    --base-spacing-unit-small:         var(--base-line-height) * var(--base-spacing-unit-factor-small) + rem;
-    --base-spacing-unit-xs:            var(--base-line-height) * var(--base-spacing-unit-factor-xs) + rem;
-    --base-spacing-unit-xxs:           var(--base-line-height) * var(--base-spacing-unit-factor-xxs) + rem;
-
-    /* Borders */
-
-    --base-border-width:              0.125em;
-    --base-border-width-small:        0.0625em;
-    --base-border-radius-large:       0.25em;
-    --base-border-radius:             0.125em;
-    --base-border-radius-small:       0.0625em;
-    --base-border-radius-round:       50%;
-
+    --bp-xl:     74em; /* 1200 / 19 */
 }
 
 
@@ -109,7 +82,6 @@ html {
     -webkit-tap-highlight-color: var(--black);
     scroll-behavior: smooth;
     box-sizing: border-box;
-
 }
 
 *,
@@ -123,6 +95,11 @@ html {
 	width:100%;
 }
 
+.page {
+	padding: 5% 8%;
+    padding-bottom: 0;
+}
+
 nav {
     display: block;
 }
@@ -133,7 +110,7 @@ body {
     font-family: var(--ff-barlow);
     font-size: fs-text;
     font-weight: var(--fw-normal);
-    line-height: 1.5;
+    line-height: var(--base-line-height);
 }
 
 .container {
@@ -154,11 +131,6 @@ body {
 
 .bodytext {
     font-size: var(--fs-text);
-}
-
-.page {
-	padding: 5% 8%;
-    padding-bottom: 0;
 }
 
 .img {
@@ -182,40 +154,7 @@ body {
     gap: 3vw;
 }
 
-#contact {
-	background-image: linear-gradient(0, var(--skyblue-dark), 30%, var(--white));
-    padding: 3.125rem;
-    height: 50vh;
-}
-
-.icon-social {
-    color: var(--white);
-    font-size: var(--fs-socialIcons);
-}
-
-.footer-text {
-    font-size: var(--fs-footerText);
-    font-weight: var(--fw-normal);
-    letter-spacing: 0.5vw;
-}
-
-.column-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.row-footer {
-    margin: 5%;
-    margin-bottom: 1%;
-}
-
 @media screen and (max-width: 74em) {
-    .o-grid__row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     .page {
         padding: 8% 0;
         padding-bottom: 0;
@@ -225,27 +164,8 @@ body {
         flex-direction: column;
     }
 
-    .reverse {
-        flex-direction: column-reverse;
-    }
-
-    .img {
-        max-width: none;
-        width: 40vw;
-    }
-
-    .icon-social {
-        font-size: var(--fs-socialIcons__tablet);
-    }
-
     .subtitle {
         font-size: var(--fs-subtitle__tablet);
-
-    }
-
-    .footer-text {
-        font-size: var(--fs-footerText__tablet);
-        font-weight: var(--fw-normal);
     }
 
     .bodytext {
@@ -253,21 +173,17 @@ body {
         font-size: var(--fs-text__tablet);
     }
 
+    .img {
+        max-width: none;
+        width: 40vw;
+    }
+
     .reverse {
+        flex-direction: column-reverse;
         gap: 3vw;
     }
 
     .space {
         gap: 6vw;
-    }
-
-    #contact {
-        height: 40vh;
-    }
-}
-
-@media screen and (max-width: 40em) {
-    #contact {
-        height: 13rem;
     }
 }

@@ -1,16 +1,13 @@
-
-@import "style.css";
-
-.page-content {
-	width:100%;
-}
-
 .home-section {
 	background-image: linear-gradient(180deg, var(--blue-medium), 90%, var(--skyblue-light));
     height: 100vh;
     display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.container__home {
+	padding: 8%;
 }
 
 .title {
@@ -24,13 +21,15 @@
 	font-size: var(--fs-typewriter);
 }
 
-.container__home {
-	padding: 8%;
-}
-
 #profile-icon {
 	width: 100%;
 }
+
+/* 
+========================
+    Arrow
+========================
+*/
 
 @keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {
@@ -61,10 +60,6 @@
 }
 
 @media screen and (max-width: 74em) {
-	.o-grid__col {
-		margin-top: 4vw;
-	}
-
 	.container__home {
 		padding: 10% 2%;
 	}
@@ -78,10 +73,6 @@
 
 	#app {
 		font-size: var(--fs-typewriter__tablet);
-	}
-
-	.home-section {
-		width: 100%;
 	}
 
 	.arrow {

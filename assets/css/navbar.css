@@ -1,5 +1,3 @@
-@import "style.css";
-
 .navbar {
 	display: flex;
 	flex-direction: row;
@@ -11,20 +9,6 @@
 	z-index: 1;
 	top: -12.5rem;
 	transition: top 0.3s ease;
-}
-
-.icon {
-	display: none;
-	position: absolute;
-	right: 4vw;
-	padding-right: 6vw;
-	color: var(--white);
-	font-size: var(--fs-icon);
-}
-
-#name {
-	font-weight: var(--fw-bold);
-	font-size: var(--fs-name);
 }
 
 .nav-item {
@@ -44,6 +28,20 @@
     transform: scaleX(0);  
     transition: 350ms ease-in-out;
     transform-origin: 0% 50%;
+}
+
+#name {
+	font-weight: var(--fw-bold);
+	font-size: var(--fs-name);
+}
+
+.icon {
+	display: none;
+	position: absolute;
+	right: 4vw;
+	padding-right: 6vw;
+	color: var(--white);
+	font-size: var(--fs-icon);
 }
 
 .sections {

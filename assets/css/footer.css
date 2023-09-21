@@ -1,0 +1,48 @@
+#contact {
+	background-image: linear-gradient(0, var(--skyblue-dark), 30%, var(--white));
+    padding: 3.125rem;
+    height: 50vh;
+}
+
+.column-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-footer {
+    margin: 5%;
+    margin-bottom: 1%;
+}
+
+.icon-social {
+    color: var(--white);
+    font-size: var(--fs-socialIcons);
+}
+
+.footer-text {
+    font-size: var(--fs-footerText);
+    font-weight: var(--fw-normal);
+    letter-spacing: 0.5vw;
+}
+
+@media screen and (max-width: 74em) {
+    #contact {
+        height: 40vh;
+    }
+
+    .icon-social {
+        font-size: var(--fs-socialIcons__tablet);
+    }
+
+    .footer-text {
+        font-size: var(--fs-footerText__tablet);
+        font-weight: var(--fw-normal);
+    }
+}
+
+@media screen and (max-width: 40em) {
+    #contact {
+        height: 13rem;
+    }
+}

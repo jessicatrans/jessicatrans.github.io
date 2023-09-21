@@ -3,25 +3,26 @@
    ========================================================================== */
 
 .o-grid {
-    /* clear: both; */
     width: 100%;
-    /* margin-top: var(--base-spacing-unit); */
-
 }
 
 /* Row */
 .o-grid__row {
     margin: 5%;
-
-    /* margin-left: var(--base-spacing-unit);
-    margin-top: var(--base-spacing-unit); */
-    /* margin-top: 0; */
 }
 
 /* Column */
-
 .o-grid__col {
-    /* padding-left: var(--base-spacing-unit);
-    padding-top: var(--base-spacing-unit); */
     padding: 0 3%;
+}
+
+@media screen and (max-width: 74em) {
+    .o-grid__row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .o-grid__col {
+		margin-top: 4vw;
+	}
 }
