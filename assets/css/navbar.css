@@ -16,8 +16,8 @@
 .icon {
 	display: none;
 	position: absolute;
-	right: 6vw;
-	padding: 2rem;
+	right: 4vw;
+	padding-right: 6vw;
 	color: var(--white);
 	font-size: var(--fs-icon);
 }
@@ -55,6 +55,10 @@
 		display: block;
 	}
 
+	.sections {
+		padding: 1.2rem 0;
+	}
+
 	.visibility {
 		display: none;
 	}
@@ -81,5 +85,6 @@
 
 	.sections {
 		font-size: var(--fs-sections__tablet);
+		padding: 3vw 0;
 	}
 }

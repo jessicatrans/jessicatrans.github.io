@@ -28,7 +28,14 @@
 
     --fs-name: 2.5rem;
     --fs-name__tablet: 6vw;
+
     --fs-icon: 2.5rem;
+    --fs-socialIcons: 3vw;
+    --fs-socialIcons__tablet: 6vw;
+
+    --fs-footerText: 1vw;
+    --fs-footerText__tablet: 2vw;
+
     --fs-sections: 2rem;
     --fs-sections__tablet: 5vw;
 
@@ -137,13 +144,12 @@ body {
 }
 
 .subtitle {
-    font-family: var(--ff-barlow);
 	background: -webkit-linear-gradient(var(--blue-dark), var(--skyblue-medium));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: var(--fs-subtitle);
     font-weight: var(--fw-semibold);
-    letter-spacing: 6px;
+    letter-spacing: 1vw;
 }
 
 .bodytext {
@@ -180,17 +186,40 @@ body {
     background-color: var(--gray-medium); 
 	background-image: linear-gradient(0, var(--skyblue-dark), 30%, var(--white));
 	padding: 3.125rem;
-	/* min-height:100vh; */
+    height: 50vh;
 }
 
-.icon__contact {
-    color: white;
-    font-size: 24px;
+.icon-social {
+    color: var(--white);
+    font-size: var(--fs-socialIcons);
+}
+
+.footer-text {
+    font-size: var(--fs-footerText);
+    font-weight: var(--fw-normal);
+    letter-spacing: 0.5vw;
+}
+
+.column-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-footer {
+    margin: 5%;
+    margin-bottom: 1%;
 }
 
 @media screen and (max-width: 74em) {
+    .o-grid__row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .page {
         padding: 8% 0;
+        padding-bottom: 0;
     }
 
     .container {
@@ -206,8 +235,18 @@ body {
         width: 40vw;
     }
 
+    .icon-social {
+        font-size: var(--fs-socialIcons__tablet);
+    }
+
     .subtitle {
         font-size: var(--fs-subtitle__tablet);
+
+    }
+
+    .footer-text {
+        font-size: var(--fs-footerText__tablet);
+        font-weight: var(--fw-normal);
     }
 
     .bodytext {
@@ -217,5 +256,19 @@ body {
 
     .reverse {
         gap: 3vw;
+    }
+
+    .space {
+        gap: 6vw;
+    }
+
+    #contact {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    #contact {
+        height: 10rem;
     }
 }
