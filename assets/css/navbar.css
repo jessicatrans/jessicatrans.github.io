@@ -17,14 +17,14 @@
 	display: none;
 	position: absolute;
 	right: 6vw;
-	padding: 1.5rem;
+	padding: 2rem;
 	color: var(--white);
-	font-size: var(--fs-2);
+	font-size: var(--fs-icon);
 }
 
 #name {
 	font-weight: var(--fw-bold);
-	font-size: var(--fs-2);
+	font-size: var(--fs-name);
 }
 
 .nav-item {
@@ -34,12 +34,13 @@
 }
 
 .sections {
-	font-size: var(--fs-4);
+	font-size: var(--fs-sections);
 }
 
 @media screen and (max-width: 74em) {
 	.icon {
 		display: block;
+
 	}
 
 	.visibility {
@@ -53,19 +54,20 @@
 
 	.responsive a {
 		display: block;
+		float: none;
 	}
 }
 
 @media screen and (max-width: 40em) {
 	#name {
-		font-size: var(--fs-name);
+		font-size: var(--fs-name__tablet);
 	}
 
 	.icon {
-		font-size: var(--fs-name);
+		font-size: var(--fs-name__tablet);
 	}
 
 	.sections {
-		font-size: 4vw;
+		font-size: var(--fs-sections__tablet);
 	}
 }

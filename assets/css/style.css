@@ -25,7 +25,11 @@
     --fs-typewriter: 1.5vw;
     --fs-typewriter__tablet: 2.9vw;
 
-    --fs-name: 6vw;
+    --fs-name: 2.5rem;
+    --fs-name__tablet: 6vw;
+    --fs-icon: 2.5rem;
+    --fs-sections: 2rem;
+    --fs-sections__tablet: 5vw;
 
     --fs-1: 2.94rem; /* 56 / 19 */
     --fs-2: 2.47rem; /* 47 / 19 */
