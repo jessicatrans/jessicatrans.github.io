@@ -75,7 +75,7 @@
     }
 }
 
-@media all and (min-width: 62em) {
+@media all and (min-width: 61em) {
     .u-3\/4\@lg {
         width: 75%;
     }
@@ -119,7 +119,7 @@
     }
 }
 
-@media screen and (max-width: 74em) {
+@media screen and (max-width: 61em) {
     .u-1\/1 {
         width: 80%;
     }

@@ -48,7 +48,7 @@
 	font-size: var(--fs-sections);
 }
 
-@media screen and (max-width: 74em) {
+@media screen and (max-width: 61em) {
 	.icon {
 		display: block;
 	}

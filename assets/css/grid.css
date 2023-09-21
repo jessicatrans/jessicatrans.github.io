@@ -16,7 +16,7 @@
     padding: 0 3%;
 }
 
-@media screen and (max-width: 74em) {
+@media screen and (max-width: 61em) {
     .o-grid__row {
         margin-left: 0;
         margin-right: 0;
