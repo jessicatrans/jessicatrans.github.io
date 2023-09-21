@@ -25,6 +25,8 @@
     --fs-typewriter: 1.5vw;
     --fs-typewriter__tablet: 2.9vw;
 
+    --fs-name: 6vw;
+
     --fs-1: 2.94rem; /* 56 / 19 */
     --fs-2: 2.47rem; /* 47 / 19 */
     --fs-3: 2.05rem; /* 39 / 19 */
@@ -144,7 +146,7 @@ body {
 }
 
 .page {
-	padding: 8%;
+	padding: 5.7% 8%;
 }
 
 .img {

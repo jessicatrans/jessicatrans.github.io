@@ -62,26 +62,32 @@ typewriter.typeString('hello!')
 
 
 // When the user scrolls down 20px from the top of the document, slide down the navbar
-// window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
-// function scrollFunction() {
-//   var x = document.getElementById("nav");
-//   if (x.className === "topnav") {
-//     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-//       document.getElementById("nav").style.top = "0";
-//     } else {
-//       document.getElementById("nav").style.top = "-70px";
-//     }
-//   } else {
-//     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-//       document.getElementById("nav").style.top = "0";
-//     } else {
-//       // hides navbar
-//       document.getElementById("nav").style.top = "-230px";
-//     }
-//   }
+function scrollFunction() {
+    var navbar = document.getElementById("nav");
 
-// }
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        navbar.style.top = "0";
+    } else {
+        // hides navbar
+        navbar.style.top = "-12.5rem";
+        var x = document.getElementById("nav");
+        if (x.className === "navbar responsive") {
+            x.className = "navbar";
+        }
+    }
+}
+
+// Responsive Topnav
+function hamburgerIcon() {
+    var x = document.getElementById("nav");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+}
 
 // filterSelection("all")
 // function filterSelection(c) {
@@ -126,15 +132,4 @@ typewriter.typeString('hello!')
 //     this.className += " active";
 //     console.log(current);
 //   });
-// }
-
-
-// // Responsive Topnav
-// function hamburgerIcon() {
-//   var x = document.getElementById("nav");
-//   if (x.className === "navbar container") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "navbar container";
-//   }
 // }
