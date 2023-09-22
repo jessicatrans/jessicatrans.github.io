@@ -37,10 +37,11 @@
     --fs-name__phone: 5vw;
 
     --fs-icon: 1.6rem;
-    --fs-socialIcons: 2.2rem;
+    --fs-socialIcons: 3.2vw;
     --fs-socialIcons__tablet: 3rem;
 
-    --fs-footerText: 0.7rem;
+    --fs-footerText: 1.16rem;
+    --fs-footerText__tablet: 0.7rem;
 
     --fs-sections: 1.15rem;
     --fs-sections__tablet: 2.5vw;
