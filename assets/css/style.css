@@ -160,7 +160,7 @@ body {
     gap: 3vw;
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 46em) {
     .page {
         padding: 8% 0;
         padding-bottom: 0;
