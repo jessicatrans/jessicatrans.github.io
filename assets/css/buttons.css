@@ -10,8 +10,9 @@
 	margin-top: 1.3rem;
 }
 
-.buttons:hover {
-	opacity: 70%;
+.buttons:hover,
+.buttons:active {
+    opacity: 70%; /* Reduce opacity when hovered or active (clicked/tapped) */
 }
 
 @media screen and (max-width: 46em) {
