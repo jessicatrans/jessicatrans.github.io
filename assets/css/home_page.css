@@ -75,6 +75,10 @@
 		font-size: var(--fs-typewriter__tablet);
 	}
 
+	#profile-icon {
+		width: 72%;
+	}
+
 	.arrow {
 		padding: 0.55rem;
 	}
