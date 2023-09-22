@@ -19,5 +19,6 @@
         font-size: var(--fs-button__tablet);
         width: 17vw;
         height: 4.5vw;
+		margin-top: 2vw;
     }
 }
