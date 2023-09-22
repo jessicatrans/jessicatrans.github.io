@@ -59,8 +59,7 @@
 	}
 
 	.sections {
-		/* padding: 1.2rem 0; */
-		font-size: var(--fs-sections__tablet);
+		font-size: var(--fs-sections);
 	}
 
 	.visibility {
@@ -90,6 +89,10 @@
 
 	.icon {
 		font-size: var(--fs-name__tablet);
+	}
+
+	.sections {
+		font-size: var(--fs-sections__tablet);
 	}
 
 	.grid-navbar {
