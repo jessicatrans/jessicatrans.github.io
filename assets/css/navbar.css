@@ -92,10 +92,6 @@
 		font-size: var(--fs-name__tablet);
 	}
 
-	.sections {
-		font-size: var(--fs-sections__phone);
-	}
-
 	.grid-navbar {
 		gap: 1rem;
 	}
