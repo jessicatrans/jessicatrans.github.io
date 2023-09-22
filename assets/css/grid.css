@@ -9,6 +9,7 @@
 /* Row */
 .o-grid__row {
     margin: 4%;
+    margin-bottom: 0;
 }
 
 /* Column */
@@ -16,7 +17,7 @@
     padding: 0 3%;
 }
 
-@media screen and (max-width: 61em) {
+@media screen and (max-width: 50em) {
     .o-grid__row {
         margin-left: 0;
         margin-right: 0;

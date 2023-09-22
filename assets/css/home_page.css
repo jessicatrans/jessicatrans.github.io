@@ -59,7 +59,7 @@
 	transform: scale(1.1) rotate(45deg);
 }
 
-@media screen and (max-width: 61em) {
+@media screen and (max-width: 50em) {
 	.container__home {
 		padding: 10% 2%;
 	}

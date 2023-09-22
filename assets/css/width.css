@@ -119,8 +119,8 @@
     }
 }
 
-@media screen and (max-width: 61em) {
+@media screen and (max-width: 50em) {
     .u-1\/1 {
-        width: 80%;
+        width: 60%;
     }
 }

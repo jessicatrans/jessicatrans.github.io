@@ -13,7 +13,7 @@
 
 .nav-item {
 	color: var(--white);
-	padding: 0 2rem;
+	/* padding: 0 2rem; */
 	text-decoration: none;
 }
 
@@ -48,13 +48,19 @@
 	font-size: var(--fs-sections);
 }
 
-@media screen and (max-width: 61em) {
+.grid-navbar {
+	justify-content: space-between;
+	gap: 3rem;
+}
+
+@media screen and (max-width: 50em) {
 	.icon {
 		display: block;
 	}
 
 	.sections {
-		padding: 1.2rem 0;
+		/* padding: 1.2rem 0; */
+		font-size: var(--fs-sections__tablet);
 	}
 
 	.visibility {
@@ -70,9 +76,14 @@
 		display: block;
 		float: none;
 	}
+
+	.grid-navbar {
+		gap: 1.5rem;
+		margin: 1rem 0;
+	}
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 30em) {
 	#name {
 		font-size: var(--fs-name__tablet);
 	}
@@ -82,7 +93,10 @@
 	}
 
 	.sections {
-		font-size: var(--fs-sections__tablet);
-		padding: 3vw 0;
+		font-size: var(--fs-sections__phone);
+	}
+
+	.grid-navbar {
+		gap: 1rem;
 	}
 }

@@ -14,10 +14,10 @@
 	opacity: 70%;
 }
 
-@media screen and (max-width: 61em) {
+@media screen and (max-width: 50em) {
     .buttons {
         font-size: var(--fs-button__tablet);
-        width: 19.5vw;
+        width: 17vw;
         height: 4.5vw;
     }
 }
