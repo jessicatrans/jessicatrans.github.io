@@ -92,3 +92,22 @@ function hamburgerIcon() {
       x.className = "navbar";
     }
 }
+
+/* 
+========================
+    Click Button
+========================
+*/
+
+// const button = document.getElementsByClassName("buttons");
+
+// button.addEventListener('click', () => {
+//   button.style.opacity = '0.7'; // Reduce opacity when the button is clicked
+// });
+
+// document.addEventListener('click', (event) => {
+//   // Restore the original opacity when something else is clicked
+//   if (event.target !== button) {
+//     button.style.opacity = '1';
+//   }
+// });

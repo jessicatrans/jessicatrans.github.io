@@ -131,6 +131,7 @@ body {
 
 .bodytext {
     font-size: var(--fs-text);
+    color: var(--gray-medium);
 }
 
 .img {

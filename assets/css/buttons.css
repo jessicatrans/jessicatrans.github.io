@@ -8,11 +8,14 @@
 	box-shadow: rgba(0, 0, 0, 0.24) 0 0.188rem 0.5rem;
 	border: none!important;
 	margin-top: 1.3rem;
+	cursor: pointer;
+	/* opacity: 1; */
+	transition: opacity 0.3s ease;
 }
 
 .buttons:hover,
 .buttons:active {
-    opacity: 70%; /* Reduce opacity when hovered or active (clicked/tapped) */
+    opacity: 70%; 
 }
 
 @media screen and (max-width: 46em) {
