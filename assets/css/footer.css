@@ -31,10 +31,18 @@
     .row-footer {
         gap: 2rem;
     }
+
+    .icon-social {
+        font-size: var(--fs-socialIcons__tablet);
+    }
 }
 
 @media screen and (max-width: 30em) {
     #contact {
         height: 13rem;
+    }
+
+    .footer-text {
+        font-size: var(--fs-footerText__phone);
     }
 }
