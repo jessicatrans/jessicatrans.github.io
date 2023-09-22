@@ -84,15 +84,15 @@
 
 @media screen and (max-width: 30em) {
 	#name {
-		font-size: var(--fs-name__tablet);
+		font-size: var(--fs-5);
 	}
 
 	.icon {
-		font-size: var(--fs-name__tablet);
+		font-size: var(--fs-5);
 	}
 
 	.sections {
-		font-size: var(--fs-sections__tablet);
+		font-size: var(--base-font-size);
 	}
 
 	.grid-navbar {

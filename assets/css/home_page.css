@@ -76,10 +76,24 @@
 	}
 
 	#profile-icon {
-		width: 72%;
+		width: 73%;
 	}
 
 	.arrow {
 		padding: 0.55rem;
+	}
+}
+
+@media screen and (max-width: 30em) {
+    .title {
+		font-size: var(--fs-title__phone);
+	}
+
+	#app {
+		font-size: var(--fs-typewriter__phone);
+	}
+
+	#profile-icon {
+		width: 90%;
 	}
 }

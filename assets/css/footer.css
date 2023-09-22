@@ -32,13 +32,8 @@
         height: 40vh;
     }
 
-    .icon-social {
-        font-size: var(--fs-socialIcons__tablet);
-    }
-
-    .footer-text {
-        font-size: var(--fs-footerText__tablet);
-        font-weight: var(--fw-normal);
+    .row-footer {
+        gap: 2rem;
     }
 }
 

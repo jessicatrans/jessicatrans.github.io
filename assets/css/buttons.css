@@ -20,9 +20,9 @@
 
 @media screen and (max-width: 46em) {
     .buttons {
-        font-size: var(--fs-button__tablet);
-        width: 17vw;
-        height: 4.5vw;
+        font-size: var(--base-font-size);
+        width: 7.5rem;
+        height: 2rem;
 		margin-top: 2vw;
     }
 }

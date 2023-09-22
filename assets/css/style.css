@@ -22,23 +22,29 @@
     /* font */
     --fs-title: 3vw;
     --fs-title__tablet: 5.7vw;
+    --fs-title__phone: 1.68rem;
+
     --fs-subtitle: 3vw;
     --fs-subtitle__tablet: 6vw;
+    --fs-subtitle__phone: 1.68rem;
+
     --fs-typewriter: 1.5vw;
     --fs-typewriter__tablet: 2.9vw;
+    --fs-typewriter__phone: 1rem;
 
     --fs-name: 1.6rem;
     --fs-name__tablet: 4vw;
+    --fs-name__phone: 5vw;
 
     --fs-icon: 1.6rem;
-    --fs-socialIcons: 3vw;
-    --fs-socialIcons__tablet: 4vw;
+    --fs-socialIcons: 2.2rem;
+    --fs-socialIcons__tablet: 3rem;
 
-    --fs-footerText: 1vw;
-    --fs-footerText__tablet: 2vw;
+    --fs-footerText: 0.7rem;
 
-    --fs-sections: 1.1rem;
+    --fs-sections: 1.15rem;
     --fs-sections__tablet: 2.5vw;
+    --fs-sections__phone: 4vw;
 
     --fs-1: 2.94rem; /* 56 / 19 */
     --fs-2: 2.47rem; /* 47 / 19 */
@@ -48,7 +54,7 @@
     --fs-6: 1.15rem; /* 22 / 19 */
 
     --fs-text: 1.5vw;
-    --fs-text__tablet: 2.5vw;
+    --fs-text__tablet: 1.15rem;
 
     --fs-button: 1.3vw;
     --fs-button__tablet: 2vw;
@@ -57,7 +63,7 @@
     --fw-semibold: 600;
     --fw-bold: 700;
 
-    --base-font-size:                 19px;
+    --base-font-size:                 1rem;
     --base-line-height:               1.5;
 
     /* 
@@ -171,7 +177,7 @@ body {
     }
 
     .subtitle {
-        font-size: var(--fs-subtitle__tablet);
+        font-size: var(--fs-2);
     }
 
     .bodytext {
@@ -181,7 +187,7 @@ body {
 
     .img {
         max-width: none;
-        width: 40vw;
+        width: 70%;
     }
 
     .reverse {
@@ -190,3 +196,17 @@ body {
     }
 }
 
+@media screen and (max-width: 30em) {
+    .subtitle {
+        font-size: var(--fs-subtitle__phone);
+    }
+
+    .bodytext {
+        text-align: center;
+        font-size: var(--base-font-size);
+    }
+
+    .img {
+        width: 90%;
+    }
+}
