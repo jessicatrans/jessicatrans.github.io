@@ -21,6 +21,7 @@
 }
 
 .footer-text {
+    padding-top: 1.5vw;
     font-size: var(--fs-footerText);
     font-weight: var(--fw-normal);
     letter-spacing: 0.5vw;
