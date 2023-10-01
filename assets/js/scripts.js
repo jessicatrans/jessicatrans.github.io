@@ -66,18 +66,31 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     var navbar = document.getElementById("nav");
+    var link = "/index.html";
 
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        navbar.style.top = "0";
-    } else {
-        // hides navbar
-        navbar.style.top = "-12.5rem";
-        var x = document.getElementById("nav");
-        if (x.className === "navbar responsive") {
-            x.className = "navbar";
+    if (window.location.pathname == link) {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            navbar.style.top = "0";
+        } else {
+            // hides navbar
+            navbar.style.top = "-12.5rem";
+            var x = document.getElementById("nav");
+            if (x.className === "navbar responsive") {
+                x.className = "navbar";
+            }
         }
     }
 }
+
+// if not under index.html, then keep navbar visible at all times
+// function navBar() {
+//     if (window.location.pathname == "/art.html") {
+//         var navbar = document.getElementsByClassName('navbar');
+//         navbar.style.top = '';
+//     }
+// }
+
+// navBar();
 
 /* 
 ========================
