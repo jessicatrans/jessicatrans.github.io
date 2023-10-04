@@ -66,17 +66,18 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     var navbar = document.getElementById("nav");
-    var link = "/index.html";
-    var aboutMe = "#about-me";
+    var link = "/art.html";
 
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        navbar.style.top = "0";
-    } else {
-        // hides navbar
-        navbar.style.top = "-12.5rem";
-        var x = document.getElementById("nav");
-        if (x.className === "navbar responsive") {
-            x.className = "navbar";
+    if (window.location.pathname != link) {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            navbar.style.top = "0";
+        } else {
+            // hides navbar
+            navbar.style.top = "-12.5rem";
+            var x = document.getElementById("nav");
+            if (x.className === "navbar responsive") {
+                x.className = "navbar";
+            }
         }
     }
 }
