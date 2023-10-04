@@ -1,0 +1,27 @@
+.art-img {
+    border-radius: 2rem 2rem;
+    transition: 0.5s ease-in-out;
+}
+
+.o-grid__col:hover .art-img {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+
+.art-text {
+    position: absolute;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-align: right;
+}
+
+.o-grid__col:hover .art-text{
+    opacity: 1;
+}
+
+.caption {
+    background-color: var(--gray);
+    color: var(--white);
+    font-size: var(--base-font-size);
+}
