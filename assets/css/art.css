@@ -1,3 +1,7 @@
+.round {
+    border-radius: 2rem 2rem;
+}
+
 .art-img {
     border-radius: 2rem 2rem;
     transition: 0.3s ease-in-out;

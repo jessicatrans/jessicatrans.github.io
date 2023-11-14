@@ -137,6 +137,10 @@ body {
     letter-spacing: 1vw;
 }
 
+h1, p {
+    color: var(--black);
+}
+
 .bodytext {
     font-size: var(--fs-text);
     color: var(--gray-medium);
@@ -166,6 +170,11 @@ body {
 .space {
     display: flex;
     gap: 3vw;
+}
+
+.space-btw {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 46em) {

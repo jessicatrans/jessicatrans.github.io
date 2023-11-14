@@ -7,9 +7,13 @@
 }
 
 /* Row */
-.o-grid__row {
+.o-grid__row, .ogrid__row-art {
     margin: 4%;
     margin-bottom: 0;
+}
+
+.o-grid__row-modal {
+    margin-top: 0;
 }
 
 /* Column */
@@ -21,6 +25,10 @@
     .o-grid__row {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .o-grid__row-art {
+        margin: 0;
     }
 
     .o-grid__col {
