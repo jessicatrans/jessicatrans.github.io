@@ -110,6 +110,35 @@ function togglePopUp(modalNumber) {
     }
 }
 
+document.addEventListener('click', function (e) {
+    var clickedElement = e.target;
+
+    // Check if the clicked element has the 'toggle-modal' class
+    if (clickedElement.classList.contains('toggle-modal')) {
+        // Find the closest parent with the 'container' class
+        var container = clickedElement.closest('.container');
+
+        // Find the modal associated with the container
+        var modalId = container.getAttribute('id').replace('myBtn', 'modal');
+        var modal = document.getElementById(modalId);
+
+        // Toggle the modal
+        toggleModal(modal);
+    }
+
+    // Check if the clicked element has the 'close' class
+    if (clickedElement.classList.contains('close')) {
+        // Find the closest parent with the 'modal' class
+        var modal = clickedElement.closest('.modal');
+
+        // Toggle the modal
+        toggleModal(modal);
+    }
+});
+
+function toggleModal(modal) {
+    modal.style.display = (modal.style.display === 'none' || modal.style.display === '') ? 'block' : 'none';
+}
 
 // if not under index.html, then keep navbar visible at all times
 // function navBar() {
