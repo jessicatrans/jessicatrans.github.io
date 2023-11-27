@@ -83,9 +83,9 @@ function scrollFunction() {
 }
 
 /* 
-========================
+=============================
     Modal Pop Up Feature
-========================
+=============================
 */
 document.addEventListener('click', function (e) {
     var clickedElement = e.target;
@@ -116,6 +116,7 @@ document.addEventListener('click', function (e) {
 function toggleModal(modal) {
     modal.style.display = (modal.style.display === 'none' || modal.style.display === '') ? 'block' : 'none';
 }
+
 
 // if not under index.html, then keep navbar visible at all times
 // function navBar() {
