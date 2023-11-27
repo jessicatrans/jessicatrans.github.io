@@ -111,6 +111,12 @@ document.addEventListener('click', function (e) {
         // Toggle the modal
         toggleModal(modal);
     }
+
+    // Check if the clicked element is the overlay (background) of the modal
+    if (clickedElement.classList.contains('modal')) {
+        // Close the modal
+        toggleModal(clickedElement);
+    }
 });
 
 function toggleModal(modal) {
