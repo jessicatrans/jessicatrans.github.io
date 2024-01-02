@@ -7,8 +7,7 @@
 }
 
 /* Row */
-.o-grid__row,
-.ogrid__row-art {
+.o-grid__row {
   margin: 4%;
   margin-bottom: 0;
 }

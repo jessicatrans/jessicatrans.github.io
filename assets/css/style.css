@@ -137,6 +137,13 @@ body {
   letter-spacing: 1vw;
 }
 
+.header {
+  text-align: center;
+	color: var(--gray-dark);
+	font-size: var(--fs-3);
+  letter-spacing: 0.4vw;
+}
+
 .bodytext {
   font-size: var(--fs-text);
   color: var(--gray-medium);

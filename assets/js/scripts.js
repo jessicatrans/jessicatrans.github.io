@@ -66,9 +66,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     var navbar = document.getElementById("nav");
-    var link = "/art.html";
+    var link = "/index.html";
 
-    if (window.location.pathname != link) {
+    if (window.location.pathname == link) {
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             navbar.style.top = "0";
         } else {
