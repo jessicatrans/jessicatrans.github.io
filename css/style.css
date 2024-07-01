@@ -424,7 +424,7 @@ a.icon {
 /* header section styles
 /* ========================================== */
 #header {
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover; */
   /* background-size: cover; */
   background-size: 100vh;
   background-position: center center;
@@ -470,7 +470,10 @@ a.icon {
   background: url("../images/header-bg.jpg") no-repeat;
 }
 .header-three {
+  /* about me */
   background: url("../images/header-three-bg.jpg") no-repeat;
+  background: -webkit-linear-gradient(#9EC5D4, #ffffff);
+
 }
 .header-four {
   background: url("../images/header-four-bg.jpg") no-repeat;

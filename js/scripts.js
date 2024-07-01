@@ -27,11 +27,15 @@ typewriter.typeString('hello!')
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("i'm a student at uc davis (go aggies!).")
+    .typeString("i'm a uc davis alumni (go aggies!).")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
-    .typeString("i'm studying computer science.")
+    .typeString("i have a b.s. degree in computer science")
+    .pauseFor(1000)
+    .deleteAll()
+    .pauseFor(500)
+    .typeString("and a minor in asian american studies:)")
     .pauseFor(1000)
     .deleteAll()
     .pauseFor(500)
@@ -147,3 +151,4 @@ function hamburgerIcon() {
       x.className = "navbar";
     }
 }
+
