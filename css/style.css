@@ -190,7 +190,7 @@ nav a {
   -moz-transition: all 0.3s ease;
 }
 
-.brand {
+/* .brand {
   float: left;
   padding: 20px 0 0;
   transition: all 0.3s ease;
@@ -198,7 +198,7 @@ nav a {
   -moz-transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-}
+} */
 .brand a {
   color: #333;
   font-size: 24px;
@@ -418,7 +418,16 @@ a.icon {
 }
 
 #logo {
-  width:10%;
+  width: 10%;
+}
+
+/* other changes
+/* ========================================== */
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 /* header section styles
@@ -461,7 +470,7 @@ a.icon {
 .header-one {
   background: url("../images/header-bg.jpg") no-repeat;
   /* background: var(--gray-light); */
-  background: -webkit-linear-gradient(#9EC5D4, #ffffff);
+  background: -webkit-linear-gradient(#9ec5d4, #ffffff);
   /* height: 60vh !important; */
   min-height: 520px;
   padding-top: 150px !important;
@@ -472,8 +481,7 @@ a.icon {
 .header-three {
   /* about me */
   background: url("../images/header-three-bg.jpg") no-repeat;
-  background: -webkit-linear-gradient(#9EC5D4, #ffffff);
-
+  background: -webkit-linear-gradient(#9ec5d4, #ffffff);
 }
 .header-four {
   background: url("../images/header-four-bg.jpg") no-repeat;
@@ -800,7 +808,8 @@ a.icon {
 /* footer section styles
 /* ========================================== */
 footer {
-  background: #141414;
+  /* background: #141414; */
+  background: -webkit-linear-gradient(#ffffff, #9ec5d4);
   padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;
@@ -810,13 +819,18 @@ footer {
 .social-icon {
   padding: 0;
   margin: 0;
+  font-size: 28px;
 }
 .social-icon li {
-  list-style: none;
+  /* list-style: none; */
   display: inline-block;
+  margin: 10px 10px 20px 10px;
 }
 .social-icon li a {
-  border-radius: 100px;
+  padding: 30px;
+ 
+  /* font-size: 35px; */
+  /* border-radius: 100px;
   border: 1px solid transparent;
   color: #909090;
   font-size: 18px;
@@ -832,45 +846,10 @@ footer {
   margin-right: 8px;
   margin-left: 8px;
   position: relative;
-  top: 0px;
+  top: 0px; */
 }
 .social-icon li a:hover {
   background: #ffffff;
-}
-
-
-/* 
-========================
-    Arrow
-========================
-*/
-
-@keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {
-	  transform: translateY(0) rotate(45deg);
-	}
-	40% {
-	  transform: translateY(-30px) rotate(45deg);
-	}
-	60% {
-	  transform: translateY(-15px) rotate(45deg);
-	}
-}
-
-.arrow {
-	border: solid #000000;
-	border-color: #ffffff;
-	border-width: 0 0.18rem 0.18rem 0;
-	padding: 0.625rem;
-  	-webkit-transform: rotate(45deg);
-  	transition: 0.3s;
-  	animation: bounce 3s infinite;
-}
-
-.arrow:hover {
-	-webkit-animation-play-state: paused;
-	opacity: 60%;
-	transform: scale(1.1) rotate(45deg);
 }
 
 /* Responsive Mobile styles

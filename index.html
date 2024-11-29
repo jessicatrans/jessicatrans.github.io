@@ -21,7 +21,7 @@ http://www.tooplate.com/view/2082-pure-mix
     <meta http-equiv="pragma" content="no-cache" />
 
     <!-- Icon on tab -->
-    <link rel="icon" href="./img/JT_logo.png">
+    <link rel="icon" href="./img/JT_logo.png" />
 
     <!-- Bootstrap CSS
    ================================================== -->
@@ -39,6 +39,7 @@ http://www.tooplate.com/view/2082-pure-mix
     <!-- Main CSS
    ================================================== -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/clouds.css" />
 
     <!-- Google web font 
@@ -87,12 +88,50 @@ http://www.tooplate.com/view/2082-pure-mix
     <!-- Navigation section
 ================================================== -->
     <div class="nav-container">
+      <nav class="nav-inner transparent navbar" id="nav">
+        <div class="flex-container">
+            <div class="center brand"><a href="index.html"><img id="logo" src="./img/JT_logo.png"/></a></div>
+            
+            <div class="navicon">
+              <div class="menu-container">
+                <div class="circle dark inline">
+                  <i class="icon ion-navicon"></i>
+                </div>
+
+                <div class="list-menu">
+                  <i class="icon ion-close-round close-iframe"></i>
+                  <div class="intro-inner">
+                    <ul id="nav-menu">
+                      <li><a href="index.html" >Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-navbar">
+              <a href="index.html" class="nav-item sections visibility">HOME</a>
+              <a href="about.html" class="nav-item sections visibility">ABOUT</a>
+              <a href="contact.html" class="nav-item sections visibility">CONTACT</a>
+            </div>
+          </div>
+      </nav>
+    </div>
+
+
+
+
+    <!-- <div class="nav-container">
       <nav id="nav" class="nav-inner transparent">
         <div class="navbar">
           <div class="container">
             <div class="row">
               <div class="brand">
-                <a href="index.html"><img id="logo" src="./img/JT_logo.png"></a>
+                <a href="index.html"
+                  ><img id="logo" src="./img/JT_logo.png"
+                /></a>
               </div>
 
               <div class="navicon">
@@ -105,7 +144,7 @@ http://www.tooplate.com/view/2082-pure-mix
                     <i class="icon ion-close-round close-iframe"></i>
                     <div class="intro-inner">
                       <ul id="nav-menu">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html" >Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -118,7 +157,7 @@ http://www.tooplate.com/view/2082-pure-mix
           </div>
         </div>
       </nav>
-    </div>
+    </div> -->
 
     <!-- Header section
 ================================================== -->
@@ -132,11 +171,10 @@ http://www.tooplate.com/view/2082-pure-mix
               <h3 id="app" class="wow fadeInUp" data-wow-delay="1.9s"></h3>
             </div>
           </div>
-
         </div>
-        <!-- <div class="center">
-          <div id = "cloud"></div>
-        </div> -->
+        <div class="center">
+          <div id="cloud"></div>
+        </div>
         <!-- <div class="row">
           <a href="index.html#portfolio" class="arrow"></a>
         </div> -->
@@ -154,11 +192,24 @@ http://www.tooplate.com/view/2082-pure-mix
             <div class="iso-section wow fadeInUp" data-wow-delay="2.6s">
               <ul class="filter-wrapper clearfix">
                 <li>
-                  <a href="#" data-filter="*" class="selected opc-main-bg"
-                    >All</a
-                  >
+                  <a href="#" data-filter="*" class="selected opc-main-bg">All</a>
                 </li>
                 <li>
+                  <a href="#" class="opc-main-bg" data-filter=".webdev">Web Development</a>
+                </li>
+                <li>
+                  <a href="#" class="opc-main-bg" data-filter=".UXUI">UX/UI</a>
+                </li>
+                <li>
+                  <a href="#" class="opc-main-bg" data-filter=".graphicdesign">Graphic Design</a>
+                </li>
+                <li>
+                  <a href="#" class="opc-main-bg" data-filter=".illustration">Illustration</a>
+                </li>
+                
+                <!-- others: logo, pixel, concept art -->
+
+                <!-- <li>
                   <a href="#" class="opc-main-bg" data-filter=".graphic"
                     >Graphic</a
                   >
@@ -177,16 +228,17 @@ http://www.tooplate.com/view/2082-pure-mix
                   <a href="#" class="opc-main-bg" data-filter=".branding"
                     >Branding</a
                   >
-                </li>
+                </li> -->
               </ul>
 
               <!-- iso box section -->
               <div class="iso-box-section wow fadeInUp" data-wow-delay="1s">
                 <div class="iso-box-wrapper col4-iso-box">
-                  <div class="iso-box photoshop branding col-md-4 col-sm-6">
+                  
+                  <div class="iso-box webdev UXUI col-md-4 col-sm-6">
                     <div class="portfolio-thumb">
                       <img
-                        src="images/portfolio-img1.jpg"
+                        src="img/projects/simpleday.png"
                         class="img-responsive"
                         alt="Portfolio"
                       />
@@ -195,16 +247,16 @@ http://www.tooplate.com/view/2082-pure-mix
                           <a href="single-project.html"
                             ><i class="fa fa-link"></i
                           ></a>
-                          <h2>Project One</h2>
+                          <h2>Simple Day</h2>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="iso-box graphic template col-md-4 col-sm-6">
+                  <div class="iso-box webdev UXUI col-md-4 col-sm-6">
                     <div class="portfolio-thumb">
                       <img
-                        src="images/portfolio-img2.jpg"
+                        src="img/projects/bloom.png"
                         class="img-responsive"
                         alt="Portfolio"
                       />
@@ -213,16 +265,16 @@ http://www.tooplate.com/view/2082-pure-mix
                           <a href="single-project.html"
                             ><i class="fa fa-link"></i
                           ></a>
-                          <h2>Project Two</h2>
+                          <h2>Bloom</h2>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="iso-box template graphic col-md-4 col-sm-6">
+                  <div class="iso-box webdev UXUI col-md-4 col-sm-6">
                     <div class="portfolio-thumb">
                       <img
-                        src="images/portfolio-img3.jpg"
+                        src="img/projects/waterlevel.png"
                         class="img-responsive"
                         alt="Portfolio"
                       />
@@ -231,16 +283,16 @@ http://www.tooplate.com/view/2082-pure-mix
                           <a href="single-project.html"
                             ><i class="fa fa-link"></i
                           ></a>
-                          <h2>Project Three</h2>
+                          <h2>Water Storage Levels</h2>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="iso-box graphic template col-md-4 col-sm-6">
+                  <div class="iso-box webdev UXUI col-md-4 col-sm-6">
                     <div class="portfolio-thumb">
                       <img
-                        src="images/portfolio-img4.jpg"
+                        src="img/projects/tiktok-pets.png"
                         class="img-responsive"
                         alt="Portfolio"
                       />
@@ -249,34 +301,34 @@ http://www.tooplate.com/view/2082-pure-mix
                           <a href="single-project.html"
                             ><i class="fa fa-link"></i
                           ></a>
-                          <h2>Project Four</h2>
+                          <h2>Tiktok Pets</h2>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="iso-box photoshop branding col-md-4 col-sm-6">
+                  <div class="iso-box UXUI col-md-4 col-sm-6">
                     <div class="portfolio-thumb">
                       <img
-                        src="images/portfolio-img5.jpg"
+                        src="img/projects/Login, Home, Search.png"
                         class="img-responsive"
                         alt="Portfolio"
                       />
                       <div class="portfolio-overlay">
                         <div class="portfolio-item">
-                          <a href="single-project.html"
+                          <a href="senscape.html"
                             ><i class="fa fa-link"></i
                           ></a>
-                          <h2>Project Five</h2>
+                          <h2>Senscape</h2>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="iso-box graphic branding col-md-4 col-sm-6">
+                  <div class="iso-box webdev UXUI col-md-4 col-sm-6">
                     <div class="portfolio-thumb">
                       <img
-                        src="images/portfolio-img6.jpg"
+                        src="img/projects/DailyMOOd_MoodTracking.png"
                         class="img-responsive"
                         alt="Portfolio"
                       />
@@ -285,11 +337,156 @@ http://www.tooplate.com/view/2082-pure-mix
                           <a href="single-project.html"
                             ><i class="fa fa-link"></i
                           ></a>
-                          <h2>Project Six</h2>
+                          <h2>Daily MOOd</h2>
                         </div>
                       </div>
                     </div>
                   </div>
+
+                  <div class="iso-box graphicdesign col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                      <img
+                        src="img/projects/[MESA] Front_TShirt_Design_Colors.png"
+                        class="img-responsive"
+                        alt="Portfolio"
+                      />
+                      <div class="portfolio-overlay">
+                        <div class="portfolio-item">
+                          <a href="single-project.html"
+                            ><i class="fa fa-link"></i
+                          ></a>
+                          <h2>MESA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="iso-box graphicdesign col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                      <img
+                        src="img/projects/ucycle_logo.png"
+                        class="img-responsive"
+                        alt="Portfolio"
+                      />
+                      <div class="portfolio-overlay">
+                        <div class="portfolio-item">
+                          <a href="single-project.html"
+                            ><i class="fa fa-link"></i
+                          ></a>
+                          <h2>U-Cycle</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="iso-box graphicdesign branding col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                      <img
+                        src="img/projects/sticker_DUEN.png"
+                        class="img-responsive"
+                        alt="Portfolio"
+                      />
+                      <div class="portfolio-overlay">
+                        <div class="portfolio-item">
+                          <a href="single-project.html"
+                            ><i class="fa fa-link"></i
+                          ></a>
+                          <h2>DUEN</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="iso-box webdev UXUI col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                      <img
+                        src="img/projects/workflowsteps-example3.JPG"
+                        class="img-responsive"
+                        alt="Portfolio"
+                      />
+                      <div class="portfolio-overlay">
+                        <div class="portfolio-item">
+                          <a href="single-project.html"
+                            ><i class="fa fa-link"></i
+                          ></a>
+                          <h2>Redesign OASIS</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="iso-box illustration col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                      <img
+                        src="img/projects/mothernature.jpg"
+                        class="img-responsive"
+                        alt="Portfolio"
+                      />
+                      <div class="portfolio-overlay">
+                        <div class="portfolio-item">
+                          <a href="single-project.html"
+                            ><i class="fa fa-link"></i
+                          ></a>
+                          <h2>Traditional Art</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="iso-box illustration branding col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                      <img
+                        src="img/projects/hiking.png"
+                        class="img-responsive"
+                        alt="Portfolio"
+                      />
+                      <div class="portfolio-overlay">
+                        <div class="portfolio-item">
+                          <a href="single-project.html"
+                            ><i class="fa fa-link"></i
+                          ></a>
+                          <h2>Digital Art</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="iso-box illustration branding col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                      <img
+                        src="img/projects/home_kiddos.png"
+                        class="img-responsive"
+                        alt="Portfolio"
+                      />
+                      <div class="portfolio-overlay">
+                        <div class="portfolio-item">
+                          <a href="single-project.html"
+                            ><i class="fa fa-link"></i
+                          ></a>
+                          <h2>Pixel Art</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="iso-box col-md-4 col-sm-6">
+                    <div class="portfolio-thumb">
+                      <img
+                        src="img/projects/sp23-cohort.jpg"
+                        class="img-responsive"
+                        alt="Portfolio"
+                      />
+                      <div class="portfolio-overlay">
+                        <div class="portfolio-item">
+                          <a href="single-project.html"
+                            ><i class="fa fa-link"></i
+                          ></a>
+                          <h2>Air Hockey Table</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -299,25 +496,23 @@ http://www.tooplate.com/view/2082-pure-mix
     </section>
 
     <!-- Footer section
-================================================== -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <p class="wow fadeInUp" data-wow-delay="0.3s">
-              Copyright © 2016 Your Company Name - Designed by Tooplate
-            </p>
-            <ul class="social-icon wow fadeInUp" data-wow-delay="0.6s">
-              <li><a href="#" class="fa fa-facebook"></a></li>
-              <li><a href="#" class="fa fa-twitter"></a></li>
-              <li><a href="#" class="fa fa-dribbble"></a></li>
-              <li><a href="#" class="fa fa-behance"></a></li>
-              <li><a href="#" class="fa fa-google-plus"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+		================================================== -->
+		<footer>
+			<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+				<ul class="social-icon wow fadeInUp" data-wow-delay="0.3s">
+					<li><a href="#" class="fab fa-linkedin-in"></a></li>
+					<li><a href="#" class="fab fa-github"></a></li>
+					<li><a href="#" class="fa fa-envelope"></a></li>
+				</ul>
+				<p class="wow fadeInUp" data-wow-delay="0.6s">
+					Made with ♥ by Jessica Trans
+				</p>
+				</div>
+			</div>
+			</div>
+		</footer>
 
     <!-- Javascript 
 ================================================== -->

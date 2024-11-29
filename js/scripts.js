@@ -66,66 +66,66 @@ typewriter.typeString('hello!')
 */
 
 // When the user scrolls down 20px from the top of the document, slide down the navbar
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    var navbar = document.getElementById("nav");
-    var link = "/index.html";
+// function scrollFunction() {
+//     var navbar = document.getElementById("nav");
+//     var link = "/index.html";
 
-    if (window.location.pathname == link) {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            navbar.style.top = "0";
-        } else {
-            // hides navbar
-            navbar.style.top = "-12.5rem";
-            var x = document.getElementById("nav");
-            if (x.className === "navbar responsive") {
-                x.className = "navbar";
-            }
-        }
-    }
-}
+//     if (window.location.pathname == link) {
+//         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+//             navbar.style.top = "0";
+//         } else {
+//             // hides navbar
+//             navbar.style.top = "-12.5rem";
+//             var x = document.getElementById("nav");
+//             if (x.className === "navbar responsive") {
+//                 x.className = "navbar";
+//             }
+//         }
+//     }
+// }
 
 /* 
 =============================
     Modal Pop Up Feature
 =============================
 */
-document.addEventListener('click', function (e) {
-    var clickedElement = e.target;
+// document.addEventListener('click', function (e) {
+//     var clickedElement = e.target;
 
-    // Check if the clicked element has the 'toggle-modal' class
-    if (clickedElement.classList.contains('toggle-modal')) {
-        // Find the closest parent with the 'container' class
-        var container = clickedElement.closest('.container');
+//     // Check if the clicked element has the 'toggle-modal' class
+//     if (clickedElement.classList.contains('toggle-modal')) {
+//         // Find the closest parent with the 'container' class
+//         var container = clickedElement.closest('.container');
 
-        // Find the modal associated with the container
-        var modalId = container.getAttribute('id').replace('myBtn', 'modal');
-        var modal = document.getElementById(modalId);
+//         // Find the modal associated with the container
+//         var modalId = container.getAttribute('id').replace('myBtn', 'modal');
+//         var modal = document.getElementById(modalId);
 
-        // Toggle the modal
-        toggleModal(modal);
-    }
+//         // Toggle the modal
+//         toggleModal(modal);
+//     }
 
-    // Check if the clicked element has the 'close' class
-    if (clickedElement.classList.contains('close')) {
-        // Find the closest parent with the 'modal' class
-        var modal = clickedElement.closest('.modal');
+//     // Check if the clicked element has the 'close' class
+//     if (clickedElement.classList.contains('close')) {
+//         // Find the closest parent with the 'modal' class
+//         var modal = clickedElement.closest('.modal');
 
-        // Toggle the modal
-        toggleModal(modal);
-    }
+//         // Toggle the modal
+//         toggleModal(modal);
+//     }
 
-    // Check if the clicked element is the overlay (background) of the modal
-    if (clickedElement.classList.contains('modal')) {
-        // Close the modal
-        toggleModal(clickedElement);
-    }
-});
+//     // Check if the clicked element is the overlay (background) of the modal
+//     if (clickedElement.classList.contains('modal')) {
+//         // Close the modal
+//         toggleModal(clickedElement);
+//     }
+// });
 
-function toggleModal(modal) {
-    modal.style.display = (modal.style.display === 'none' || modal.style.display === '') ? 'block' : 'none';
-}
+// function toggleModal(modal) {
+//     modal.style.display = (modal.style.display === 'none' || modal.style.display === '') ? 'block' : 'none';
+// }
 
 
 // if not under index.html, then keep navbar visible at all times
@@ -143,12 +143,11 @@ function toggleModal(modal) {
     Responsive Navbar
 ========================
 */
-function hamburgerIcon() {
-    var x = document.getElementById("nav");
-    if (x.className === "navbar") {
-      x.className += " responsive";
-    } else {
-      x.className = "navbar";
-    }
-}
-
+// function hamburgerIcon() {
+//     var x = document.getElementById("nav");
+//     if (x.className === "navbar") {
+//       x.className += " responsive";
+//     } else {
+//       x.className = "navbar";
+//     }
+// }
