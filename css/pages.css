@@ -1,0 +1,11 @@
+h3, p {
+    color: #252525;
+}
+
+.header-thumb {
+    border-radius: 2rem 2rem;
+}
+
+.header-one, .header-three {
+    background: -webkit-linear-gradient(#9ec5d4, #ffffff);
+}

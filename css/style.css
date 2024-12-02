@@ -6,24 +6,6 @@ http://www.tooplate.com/view/2082-pure-mix
 
 */
 
-/* Color 
-------------------------------------- */
-:root {
-  --white: #ffffff;
-  --black: #000000;
-  --gray-light: #a3a3a3;
-  --gray: #8d8d8d;
-  --gray-medium: #575757;
-  --gray-dark: #454545;
-  --blue: #4579a1;
-  --blue-medium: #020e22;
-  --blue-dark: #010814;
-  --skyblue-light: #b6eafb;
-  --skyblue: #a1dff2;
-  --skyblue-medium: #0d7e97;
-  --skyblue-dark: #134867;
-}
-
 /* Body 
 ------------------------------------- */
 body {
@@ -68,7 +50,7 @@ h2 {
 }
 
 h3 {
-  color: #252525;
+  color: #444;
   font-size: 14px;
   letter-spacing: 4px;
 }
@@ -79,7 +61,7 @@ h5 {
 }
 
 p {
-  color: #252525;
+  color: #777;
   font-size: 16px;
   line-height: 28px;
   word-spacing: 1px;
@@ -190,15 +172,15 @@ nav a {
   -moz-transition: all 0.3s ease;
 }
 
-/* .brand {
+.brand {
   float: left;
-  padding: 20px 0 0;
+  padding: 30px 0 0;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-} */
+}
 .brand a {
   color: #333;
   font-size: 24px;
@@ -260,7 +242,7 @@ nav ul.right {
   background: transparent;
 }
 
-@media all and (max-width: 990px) {
+@media all and (max-width: 980px) {
   .nav-text-light a {
     color: #555555;
   }
@@ -417,25 +399,11 @@ a.icon {
   cursor: pointer;
 }
 
-#logo {
-  width: 10%;
-}
-
-/* other changes
-/* ========================================== */
-.center {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
 /* header section styles
 /* ========================================== */
 #header {
-  /* -webkit-background-size: cover; */
-  /* background-size: cover; */
-  background-size: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
   background-position: center center;
   text-align: center;
   padding-top: 130px;
@@ -445,7 +413,6 @@ a.icon {
 #header .header-thumb {
   background: #ffffff;
   border: 10px solid #f9f9f9;
-  border-radius: 2rem 2rem;
   padding: 62px 20px 62px 20px;
 }
 
@@ -469,9 +436,7 @@ a.icon {
 
 .header-one {
   background: url("../images/header-bg.jpg") no-repeat;
-  /* background: var(--gray-light); */
-  background: -webkit-linear-gradient(#9ec5d4, #ffffff);
-  /* height: 60vh !important; */
+  height: 60vh !important;
   min-height: 520px;
   padding-top: 150px !important;
 }
@@ -479,9 +444,7 @@ a.icon {
   background: url("../images/header-bg.jpg") no-repeat;
 }
 .header-three {
-  /* about me */
   background: url("../images/header-three-bg.jpg") no-repeat;
-  background: -webkit-linear-gradient(#9ec5d4, #ffffff);
 }
 .header-four {
   background: url("../images/header-four-bg.jpg") no-repeat;
@@ -808,8 +771,7 @@ a.icon {
 /* footer section styles
 /* ========================================== */
 footer {
-  /* background: #141414; */
-  background: -webkit-linear-gradient(#ffffff, #9ec5d4);
+  background: #141414;
   padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;
@@ -819,18 +781,13 @@ footer {
 .social-icon {
   padding: 0;
   margin: 0;
-  font-size: 28px;
 }
 .social-icon li {
-  /* list-style: none; */
+  list-style: none;
   display: inline-block;
-  margin: 10px 10px 20px 10px;
 }
 .social-icon li a {
-  padding: 30px;
- 
-  /* font-size: 35px; */
-  /* border-radius: 100px;
+  border-radius: 100px;
   border: 1px solid transparent;
   color: #909090;
   font-size: 18px;
@@ -846,7 +803,7 @@ footer {
   margin-right: 8px;
   margin-left: 8px;
   position: relative;
-  top: 0px; */
+  top: 0px;
 }
 .social-icon li a:hover {
   background: #ffffff;
