@@ -1,0 +1,28 @@
+.buttons {
+	background: #4579a1;
+	color: #ffffff;
+	font-size: 1rem;
+	/* width: 8.5vw;
+	height: 3vw; */
+    padding: 0.3rem 1rem;
+	border-radius: 4rem 4rem;
+	box-shadow: rgba(0, 0, 0, 0.24) 0 0.1rem 0.2rem;
+	border: none!important;
+	margin-top: 1.3rem;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+}
+
+.buttons:hover,
+.buttons:active {
+    opacity: 70%; 
+}
+
+@media screen and (max-width: 46em) {
+    .buttons {
+        font-size: var(--base-font-size);
+        width: 7.5rem;
+        height: 2rem;
+		margin-top: 2vw;
+    }
+}
