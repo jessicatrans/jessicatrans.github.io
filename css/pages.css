@@ -36,6 +36,7 @@ p {
     font-size: 1rem;
     font-weight: 300;
     color: black;
+    margin-top: 5px;
 }
 
 .header-thumb {
@@ -51,6 +52,8 @@ p {
 .row {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 footer {
@@ -60,7 +63,7 @@ footer {
 }
 
 .social-icon li a {
-    color: #454545;
+    color: #252525;
     font-size: 1.602rem;
 }
 
@@ -93,7 +96,7 @@ footer {
 
 /* 
 ========================
-    About
+    About, Contact
 ========================
 */
 
@@ -103,8 +106,84 @@ footer {
 
 #about img {
     padding-bottom: 0;
+    border-radius: 2rem 2rem;
+    
 }
 
-#bio {
+#bio, #contact-info {
     align-content: center;
+    padding-left: 2rem;
+}
+
+#contact {
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+#contact-img {
+    padding-top: 0 !important;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#contact input[type='submit'] {
+	color: #ffffff;
+	font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+	border-radius: 4rem 4rem;
+	box-shadow: rgba(0, 0, 0, 0.24) 0 0.1rem 0.2rem;
+	border: none!important;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+    /* padding: 0 1rem; */
+}
+
+#contact input[type='submit']:hover {
+    opacity: 70%; 
+}
+
+/* 
+========================
+    Tablet/Mobile Views
+========================
+*/
+@media screen and (max-width: 980px) {
+    #contact {
+        padding-top: 0;
+    }
+
+    #contact-img {
+        margin-bottom: 0rem;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    #contact-img {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    #about img {
+        margin-top: 2rem;
+    }
+
+    #bio {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
 }

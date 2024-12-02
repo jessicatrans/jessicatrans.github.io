@@ -1,14 +1,14 @@
 .buttons {
-	background: #4579a1;
+	background: black;
 	color: #ffffff;
 	font-size: 1rem;
-	/* width: 8.5vw;
-	height: 3vw; */
-    padding: 0.3rem 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 5px;
+    padding: 0.3rem 2rem;
 	border-radius: 4rem 4rem;
 	box-shadow: rgba(0, 0, 0, 0.24) 0 0.1rem 0.2rem;
 	border: none!important;
-	margin-top: 1.3rem;
 	cursor: pointer;
 	transition: opacity 0.3s ease;
 }
