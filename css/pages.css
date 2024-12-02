@@ -9,3 +9,21 @@ h3, p {
 .header-one, .header-three {
     background: -webkit-linear-gradient(#9ec5d4, #ffffff);
 }
+
+footer {
+    background: -webkit-linear-gradient(#ffffff, #9ec5d4);
+}
+
+.social-icon li a {
+    color: #454545;
+    font-size: 1.602rem;
+}
+
+.social-icon li {
+    margin-bottom: 15px;
+}
+
+.heart {
+    font-size: 20px;
+    font-weight: 100;
+}
