@@ -60,19 +60,19 @@ typewriter
 */
 
 
-const submitButton = document.getElementsByClassName('submit');
-const form = document.getElementById('contact-form');
+// const submitButton = document.getElementsByClassName('submit');
+// const form = document.getElementById('contact-form');
 
-submitButton.addEventListener('click', (event) => {
-  event.preventDefault(); // Prevent default form submission
+// submitButton.addEventListener('click', (event) => {
+//   event.preventDefault(); // Prevent default form submission
 
-  // Simulate form submission (optional, if needed)
-  // You can use fetch API or other methods to send data
-  // to your server if needed for processing.
+//   // Simulate form submission (optional, if needed)
+//   // You can use fetch API or other methods to send data
+//   // to your server if needed for processing.
 
-  // Display success message
-  const successMessage = document.createElement('p');
-  successMessage.textContent = "Your message has been sent successfully!"; 1    
+//   // Display success message
+//   const successMessage = document.createElement('p');
+//   successMessage.textContent = "Your message has been sent successfully!"; 1    
 
-  form.appendChild(successMessage);
-});
+//   form.appendChild(successMessage);
+// });
