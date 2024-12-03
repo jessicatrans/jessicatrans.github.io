@@ -58,6 +58,13 @@ footer {
 ========================
 */
 
+.tool {
+    color: #ffffff;
+    font-size: 0.79rem;
+    opacity: 90%;
+    font-style: italic;
+}
+
 .header-thumb {
     border-radius: 2rem 2rem;
 }
@@ -162,6 +169,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    h3, p, .iso-section li a {
+        font-size: 0.79rem;
+    }
+
     .row {
         flex-direction: column-reverse;
     }
