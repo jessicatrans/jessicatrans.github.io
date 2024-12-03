@@ -24,7 +24,7 @@ typewriter
   .pauseFor(1000)
   .deleteAll()
   .pauseFor(500)
-  .typeString("my name is jessica.")
+  .typeString("i'm a software developer.")
   .pauseFor(1000)
   .deleteAll()
   .pauseFor(500)
@@ -76,3 +76,16 @@ typewriter
 
 //   form.appendChild(successMessage);
 // });
+
+/* 
+========================
+    Update Page After BFCache Restore
+========================
+*/
+
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted && !document.cookie.match(/my-cookie/)) {
+    // Force a reload if the user has logged out.
+    location.reload();
+  }
+});

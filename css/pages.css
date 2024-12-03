@@ -1,27 +1,3 @@
-/* h1 {
-    font-size: 2.027rem;
-}
-h2 {
-    font-size: 1.802rem;
-}
-h3, .social-icon li a {
-    font-size: 1.602rem;
-}
-h4 {
-    font-size: 1.424rem;
-}
-h5 {
-    font-size: 1.266rem;
-}
-h6 {
-    font-size: 1.125rem;
-}
-p {
-    font-size: 1rem;
-} */
-
-/* small 0.889rem */
-
 h1 {
     font-size: 2.027rem;
     margin-top: 0;
@@ -37,10 +13,6 @@ p {
     font-weight: 300;
     color: black;
     margin-top: 5px;
-}
-
-.header-thumb {
-    border-radius: 2rem 2rem;
 }
 
 .header-one {
@@ -85,8 +57,31 @@ footer {
     Home
 ========================
 */
+
+.header-thumb {
+    border-radius: 2rem 2rem;
+}
+
+/* Portfolio section styles
+/* ========================================== */
 .portfolio-thumb {
     border-radius: 1rem 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.portfolio-img {
+    width: 380px;
+    height: 260px;
+    object-fit: cover;
+}
+
+#portfolio .portfolio-thumb .portfolio-overlay {
+    /* padding: 1rem 3rem !important; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .filter-wrapper li a {
