@@ -1,0 +1,27 @@
+footer {
+    background: -webkit-linear-gradient(white, #9ec5d4);
+    padding: 3rem 0;
+    padding-top: 6rem;
+}
+
+.social-icon li a {
+    color: #252525;
+    font-size: 1.728rem;
+}
+
+.social-icon li {
+    margin-bottom: 15px;
+}
+
+.social-icon li a:hover {
+    opacity: 80%;
+}
+
+.heart {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.circle {
+    padding: 0;
+}

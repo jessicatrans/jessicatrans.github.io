@@ -35,10 +35,6 @@
   opacity: 80%;
 }
 
-.nav-item:hover::after {
-  transform: scaleX(1);
-}
-
 .nav-item::after {
   display: block;
   content: "";
@@ -48,10 +44,19 @@
   transform-origin: 0% 50%;
 }
 
+.nav-item:hover::after {
+  transform: scaleX(1);
+}
+
+.active {
+  border-bottom: solid 0.18rem #a1dff2;
+  opacity: 80%;
+}
+
 .grid-navbar {
   display: flex;
   gap: 4rem;
-  font-size: 1.266rem; /*20.256px*/
+  font-size: 1.2rem; 
   font-weight: 400;
   text-transform: uppercase;
 }

@@ -7,7 +7,7 @@
 ========================
 */
 
-var app = document.getElementById("app");
+var app = document.getElementById("typewriter");
 
 var typewriter = new Typewriter(app, {
   loop: true,
@@ -16,18 +16,18 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-  .typeString("hello!")
-  .pauseFor(1000)
-  .deleteAll()
-  .pauseFor(500)
-  .typeString("nice to meet you.")
-  .pauseFor(1000)
-  .deleteAll()
-  .pauseFor(500)
-  .typeString("i'm a software developer.")
-  .pauseFor(1000)
-  .deleteAll()
-  .pauseFor(500)
+  // .typeString("hello!")
+  // .pauseFor(1000)
+  // .deleteAll()
+  // .pauseFor(500)
+  // .typeString("nice to meet you.")
+  // .pauseFor(1000)
+  // .deleteAll()
+  // .pauseFor(500)
+  // .typeString("i'm a software developer.")
+  // .pauseFor(1000)
+  // .deleteAll()
+  // .pauseFor(500)
   .typeString("i'm a uc davis alumni (go aggies!).")
   .pauseFor(1000)
   .deleteAll()
@@ -39,17 +39,17 @@ typewriter
   .typeString("and a minor in asian american studies:)")
   .pauseFor(1000)
   .deleteAll()
-  .pauseFor(500)
-  .typeString("my cat's name is sago!")
-  .pauseFor(1000)
-  .deleteAll()
-  .typeString("i also like to draw and design.")
-  .pauseFor(1000)
-  .deleteAll()
-  .pauseFor(500)
-  .typeString("thanks for visiting! :D")
-  .pauseFor(1000)
-  .deleteAll()
+  // .pauseFor(500)
+  // .typeString("my cat's name is sago!")
+  // .pauseFor(1000)
+  // .deleteAll()
+  // .typeString("i also like to draw and design.")
+  // .pauseFor(1000)
+  // .deleteAll()
+  // .pauseFor(500)
+  // .typeString("thanks for visiting! :D")
+  // .pauseFor(1000)
+  // .deleteAll()
   .start();
 
 

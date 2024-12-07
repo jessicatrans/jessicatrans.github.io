@@ -1,5 +1,5 @@
 h1 {
-    font-size: 2.027rem;
+    font-size: 2.986rem;
     margin-top: 0;
 }
 
@@ -10,6 +10,11 @@ h2 {
 h3 {
     font-size: 1rem;
     color: #252525;
+}
+
+h4 {
+    font-size: 2.488rem;
+    font-weight: 800;
 }
 
 p {
@@ -25,35 +30,16 @@ p {
     padding: 9.5rem 0 !important;
 }
 
+.header-thumb {
+    border-radius: 2rem 2rem;
+    width: 35rem;
+}
+
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-}
-
-footer {
-    background: -webkit-linear-gradient(white, #9ec5d4);
-    padding: 3rem 0;
-    padding-top: 6rem;
-}
-
-.social-icon li a {
-    color: #252525;
-    font-size: 1.602rem;
-}
-
-.social-icon li {
-    margin-bottom: 15px;
-}
-
-.social-icon li a:hover {
-    opacity: 80%;
-}
-
-.heart {
-    font-size: 20px;
-    font-weight: 100;
 }
 
 /* 
@@ -67,10 +53,6 @@ footer {
     font-size: 0.79rem;
     opacity: 90%;
     font-style: italic;
-}
-
-.header-thumb {
-    border-radius: 2rem 2rem;
 }
 
 /* Portfolio section styles
@@ -100,7 +82,7 @@ footer {
 }
 
 .filter-wrapper li a {
-    font-size: 0.889rem;
+    font-size: 1rem;
     border-radius: 2rem 2rem;
 }
 
@@ -118,6 +100,10 @@ footer {
     padding-bottom: 0;
     border-radius: 2rem 2rem;
     
+}
+
+#about .col-md-4 {
+    padding-bottom: 16px;
 }
 
 #bio, #contact-info {
@@ -177,6 +163,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .header-thumb {
+        width: 25rem;
+    }
+
     h3, p, .iso-section li a {
         font-size: 0.79rem;
     }
@@ -199,5 +189,11 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    .header-thumb {
+        width: 20rem;
+    }
 
+    h1 {
+        font-size: 1.602rem;
+    }
 }
