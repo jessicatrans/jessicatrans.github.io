@@ -51,6 +51,19 @@
     <script defer src="js/bootstrap.min.js"></script>
     <script defer src="js/wow.min.js"></script>
     <script defer src="js/custom.js"></script>
+
+    <script>
+      /* 
+      ========================
+          Clear Form 
+      ========================
+      */
+      window.onload = function () {
+        // Reset the form fields when the page loads
+        document.getElementById("contact-form").reset();
+      };
+    </script>
+    
   </head>
 
   <body>
@@ -75,12 +88,8 @@
           <div class="nav">
             <div class="grid-navbar">
               <a href="index.html" class="nav-item visibility">Home</a>
-              <a href="about.html" class="nav-item visibility"
-                >About</a
-              >
-              <a href="contact.html" class="active visibility"
-                >Contact</a
-              >
+              <a href="about.html" class="nav-item visibility">About</a>
+              <a href="contact.html" class="active visibility">Contact</a>
             </div>
             <!-- Hamburger Icon -->
             <div class="navicon">
@@ -126,7 +135,11 @@
     <section id="contact">
       <div class="container">
         <div class="row column">
-          <div class="wow fadeInUp col-lg-5 col-md-5 col-sm-9 col-xs-8" id="contact-img" data-wow-delay="1.s">
+          <div
+            class="wow fadeInUp col-lg-5 col-md-5 col-sm-9 col-xs-8"
+            id="contact-img"
+            data-wow-delay="1.s"
+          >
             <img
               src="img/working_outline_drawing.png"
               class="img-responsive"
@@ -134,14 +147,26 @@
             />
           </div>
 
-		  <!-- web3forms api -->
-          <div id="contact-info" class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="1.3s">
-			<h4>Let's work together!</h4>
+          <!-- web3forms api -->
+          <div
+            id="contact-info"
+            class="wow fadeInUp col-md-6 col-sm-12"
+            data-wow-delay="1.3s"
+          >
+            <h4>Let's work together!</h4>
             <div class="contact-form">
-              <form id="contact-form" method="post" action="https://api.web3forms.com/submit">
-				<input type="hidden" name="access_key" value="a77842ed-1847-468b-a162-d57a501d4205">
+              <form
+                id="contact-form"
+                method="post"
+                action="https://api.web3forms.com/submit"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="a77842ed-1847-468b-a162-d57a501d4205"
+                />
 
-				<input
+                <input
                   name="name"
                   type="text"
                   class="form-control"
@@ -169,10 +194,9 @@
                     value="Send a message"
                   />
                 </div>
-				<!-- Success Page/Message Sent -->
-				<!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
-				<input type="hidden" name="redirect" value="">
-
+                <!-- Success Page/Message Sent -->
+                <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
+                <input type="hidden" name="redirect" value="" />
               </form>
             </div>
           </div>
@@ -188,11 +212,28 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
-			<ul class="social-icon wow fadeInUp" data-wow-delay="0.3s">
-				<li><a href="https://www.linkedin.com/in/jessicatrans/" target="_blank" class="fa fa-linkedin"></a></li>
-				<li><a href="https://github.com/jessicatrans/" target="_blank" class="fa fa-github"></a></li>
-				<li><a href="mailto:jesstrans02@gmail.com" class="fa fa-envelope"></a></li>
-			</ul>
+            <ul class="social-icon wow fadeInUp" data-wow-delay="0.3s">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jessicatrans/"
+                  target="_blank"
+                  class="fa fa-linkedin"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/jessicatrans/"
+                  target="_blank"
+                  class="fa fa-github"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="mailto:jesstrans02@gmail.com"
+                  class="fa fa-envelope"
+                ></a>
+              </li>
+            </ul>
             <p class="wow fadeInUp" data-wow-delay="0.5s">
               Made with <span class="heart">&#9825;</span> by Jessica Trans in
               2024
@@ -201,6 +242,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>

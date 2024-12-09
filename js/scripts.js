@@ -52,13 +52,11 @@ typewriter
   // .deleteAll()
   .start();
 
-
 /* 
 ========================
     Form Submission
 ========================
 */
-
 
 // const submitButton = document.getElementsByClassName('submit');
 // const form = document.getElementById('contact-form');
@@ -72,7 +70,7 @@ typewriter
 
 //   // Display success message
 //   const successMessage = document.createElement('p');
-//   successMessage.textContent = "Your message has been sent successfully!"; 1    
+//   successMessage.textContent = "Your message has been sent successfully!"; 1
 
 //   form.appendChild(successMessage);
 // });
@@ -83,9 +81,10 @@ typewriter
 ========================
 */
 
-window.addEventListener('pageshow', (event) => {
-  if (event.persisted && !document.cookie.match(/my-cookie/)) {
-    // Force a reload if the user has logged out.
-    location.reload();
-  }
-});
+// window.addEventListener('pageshow', (event) => {
+//   if (event.persisted && !document.cookie.match(/my-cookie/)) {
+//     // Force a reload if the user has logged out.
+//     location.reload();
+//   }
+// });
+
