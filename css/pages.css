@@ -165,15 +165,28 @@ p {
     #contact-img {
         margin-bottom: 2rem;
     }
+
+    .contact-submit {
+        width: 15rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .header-thumb {
-        width: 25rem;
+        width: 26rem;
+    }
+
+    h1 {
+        font-size: 2.488rem;
     }
 
     h3, p, .iso-section li a {
         font-size: 0.79rem;
+    }
+
+    h4 {
+        font-size: 2.074rem;
+        align-content: center;
     }
 
     .row {
@@ -190,15 +203,30 @@ p {
 
     #bio {
         text-align: center;
+        padding-left: 15px;
+    }
+
+    footer {
+        padding-top: 2rem;
+    }
+
+    #contact input[type='submit'] {
+        font-size: 0.79rem;
+        width: 11rem;
+        height: 2.5rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .header-thumb {
-        width: 20rem;
+        width: 21rem;
     }
 
     h1 {
-        font-size: 1.602rem;
+        font-size: 1.728rem;
+    }
+
+    h4 {
+        font-size: 1.44rem;
     }
 }

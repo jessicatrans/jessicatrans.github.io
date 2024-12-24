@@ -105,6 +105,10 @@
     display: revert;
     visibility: visible;
   }
+
+  #nav-menu a {
+    font-size: 1.44rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
