@@ -24,6 +24,11 @@ p {
     margin-top: 5px;
 }
 
+.tool {
+    padding-top: 10px;
+    line-height: 15px;
+}
+
 .header-one {
     background: -webkit-linear-gradient(#9ec5d4, white);
     max-height: 50vh !important;
