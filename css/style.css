@@ -745,9 +745,9 @@ a.icon {
 }
 
 #contact input[type="submit"] {
-  background: #111112;
+  background: black;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 2px;
   transition: all 0.4s ease-in-out;
