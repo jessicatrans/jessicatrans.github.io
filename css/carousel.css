@@ -1,15 +1,8 @@
-
 .items {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  user-select: none; */
-  /* transform: translate(-50%, -50%); */
-  padding-top: 22.5rem;
-  padding-bottom: 2rem;
-user-select: none;
-overflow:hidden;
+  padding-top: 13rem;
+  padding-bottom: 9rem;
+  user-select: none;
+  overflow:hidden;
 }
 
 .items .item {
@@ -20,10 +13,9 @@ overflow:hidden;
   height: 250px;
   border-radius: 50%;
   overflow: hidden;
-  transition: all 300ms ease-in-out;
+  transition: all 0.3s ease;
   z-index: -1;
   opacity: 0;
-  border-color: white;
 }
 
 .item img {
@@ -32,7 +24,7 @@ overflow:hidden;
   object-fit: cover;
 }
 
-.item.active {
+.item.current {
   opacity: 1;
   z-index: 99;
   box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.5);
@@ -53,7 +45,8 @@ overflow:hidden;
 .items .button-container {
   position: absolute;
   width: 275px;
-  top: 72.5%;
+  top: 12rem;
+  left: 38%;
   z-index: 100;
 }
 
@@ -63,7 +56,7 @@ overflow:hidden;
   cursor: pointer;
   position: relative;
   opacity: 0.75;
-  transition: all 300ms ease-in-out;
+  transition: all 0.3s ease;
 }
 
 .button-container .carousel-button:hover {
@@ -73,8 +66,7 @@ overflow:hidden;
 .button-container .carousel-button:before {
   content: "";
   position: absolute;
-  /* top: 50%; */
-  top: -0.35rem;
+  top: -0.5rem;
   left: -1.2rem;
   width: 60px;
   height: 60px;
