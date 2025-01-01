@@ -2,7 +2,7 @@
   padding-top: 13rem;
   padding-bottom: 9rem;
   user-select: none;
-  overflow:hidden;
+  /* overflow:hidden; */
 }
 
 .items .item {
@@ -22,12 +22,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin-top: 0 !important;
 }
 
 .item.current {
   opacity: 1;
   z-index: 99;
-  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.7);
 }
 
 .item.prev {
@@ -46,7 +47,9 @@
   position: absolute;
   width: 275px;
   top: 12rem;
-  left: 38%;
+  left: 12.2rem;
+  align-content: center;
+  justify-content: center;
   z-index: 100;
 }
 
@@ -81,4 +84,37 @@
 
 .button-container .carousel-button:nth-child(2) {
   float: right;
+}
+
+@media screen and (max-width: 1200px) {
+  .items .button-container {
+    left: 8.5rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .items .button-container {
+    left: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .items .button-container {
+    left: 9.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .items .button-container {
+    padding-left: 25px;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .items .button-container {
+    padding-left: 0;
+    padding-right: 20px;
+    left: auto;
+  }
 }
