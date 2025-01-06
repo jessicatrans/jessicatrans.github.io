@@ -51,3 +51,9 @@ typewriter
   // .pauseFor(1000)
   // .deleteAll()
   .start();
+
+
+  $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
