@@ -154,6 +154,11 @@ p {
         padding-top: 0;
     }
 
+    #contact-info {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     #contact-img {
         margin-bottom: 0rem;
     }
