@@ -82,6 +82,11 @@ p {
     align-items: center;
 }
 
+#portfolio .portfolio-thumb .portfolio-overlay .fa {
+    margin-bottom: 10px;
+}
+
+
 .portfolio-overlay p{
     margin: 0 2rem;
 }
