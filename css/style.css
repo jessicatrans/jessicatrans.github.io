@@ -242,7 +242,7 @@ nav ul.right {
   background: transparent;
 }
 
-@media all and (max-width: 980px) {
+@media all and (max-width: 991px) {
   .nav-text-light a {
     color: #555555;
   }
@@ -812,7 +812,7 @@ footer {
 
 /* Responsive Mobile styles
 /* ========================================== */
-@media (max-width: 980px) {
+@media (max-width: 991px) {
   .intro-inner {
     top: 30%;
   }
