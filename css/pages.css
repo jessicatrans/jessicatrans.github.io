@@ -102,6 +102,32 @@ img {
 
 /* 
 ========================
+    Navbar
+========================
+*/
+
+#logo {
+    pointer-events: all;
+}
+
+/* 
+========================
+    Art Gallery
+========================
+*/
+
+.gallery-art {
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-art:hover {
+    transform: scale(1.03);
+    pointer-events: all;
+}
+
+
+/* 
+========================
     About, Contact
 ========================
 */
