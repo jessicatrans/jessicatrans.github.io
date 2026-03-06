@@ -1,1 +1,8 @@
-/*.html /:splat 301!
+/about                    /about.html                    200
+/contact                  /contact.html                  200
+/blog                     /blog.html                     200
+/digitalart-project       /digitalart-project.html       200
+/pixelart-project         /pixelart-project.html         200
+/traditionalart-project   /traditionalart-project.html   200
+
+/*.html                   /:splat                        301!
