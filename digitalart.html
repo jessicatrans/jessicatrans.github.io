@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Jessica Trans Portfolio" />
     <meta
       name="keywords"
@@ -12,7 +12,7 @@
     <meta property="og:image" content="img/JT_logo.png" />
 
     <!-- Site title
-    ================================================== -->
+		================================================== -->
     <title>Jessica Trans | Software Engineer</title>
     <link rel="icon" href="/img/cow.png" />
 
@@ -22,50 +22,47 @@
     <meta http-equiv="pragma" content="no-cache" />
 
     <!-- Bootstrap CSS
-	================================================== -->
+		================================================== -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    />
 
     <!-- Animate CSS
-	================================================== -->
+		================================================== -->
     <link rel="stylesheet" href="css/animate.min.css" />
 
     <!-- Font Icons CSS
-	================================================== -->
+		================================================== -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/ionicons.min.css" />
 
     <!-- Main CSS
-   ================================================== -->
+		================================================== -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
 
     <!-- Google web font 
-	================================================== -->
+		================================================== -->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300"
       rel="stylesheet"
       type="text/css"
     />
 
-    <!-- Javascript 
-	================================================== -->
+    <!-- Javascript
+		================================================== -->
+    <script defer src="js/scripts.js"></script>
     <script defer src="js/jquery.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
     <script defer src="js/wow.min.js"></script>
     <script defer src="js/custom.js"></script>
 
-    <script>
-      /* 
-      ========================
-          Clear Form 
-      ========================
-      */
-      window.onload = function () {
-        document.getElementById("contact-form").reset();
-      };
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
   </head>
 
   <body>
@@ -89,9 +86,9 @@
           <!-- Navbar Options -->
           <div class="nav">
             <div class="grid-navbar">
-              <a href="/" class="nav-item visibility">Home</a>
+              <a href="/" class="active visibility">Home</a>
               <a href="/about" class="nav-item visibility">About</a>
-              <a href="/contact" class="active visibility">Contact</a>
+              <a href="/contact" class="nav-item visibility">Contact</a>
             </div>
             <!-- Hamburger Icon -->
             <div class="navicon">
@@ -123,72 +120,73 @@
       <div class="container">
         <div class="row">
           <div class="header-thumb">
-            <h1 class="wow fadeIn" data-wow-delay="1s">Contact Me</h1>
-            <h3 class="wow fadeIn" data-wow-delay="1.4s">Stay in Touch!</h3>
+            <h1 class="wow fadeIn" data-wow-delay="1s">Digital Art</h1>
+            <h3 class="wow fadeIn" data-wow-delay="1.4s">
+              Clip Studio Paint, Procreate
+            </h3>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact section
+    <!-- Single Project section
 	================================================== -->
-    <section id="contact">
-      <div class="container">
-        <div class="wow fadeInUp row column" data-wow-delay="1.9s">
-          <div class="col-lg-5 col-md-5 col-sm-7 col-xs-10" id="contact-img">
-            <img
-              src="img/working_outline_drawing.png"
-              class="img-responsive"
-              alt="Portfolio"
-            />
-          </div>
-
-          <div id="contact-info" class="col-md-6 col-sm-12 col-xs-10">
-            <h4>Let's connect!</h4>
-            <div class="contact-form">
-              <form
-                id="contact-form"
-                method="post"
-                action="https://formsubmit.co/jesstrans02@gmail.com"
-              >
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="365aa6d8b01eec135f50182cdb2af992"
-                />
-                <input
-                  name="name"
-                  type="text"
-                  class="form-control"
-                  placeholder="Your Name"
-                  required
-                />
-                <input
-                  name="email"
-                  type="email"
-                  class="form-control"
-                  placeholder="Your Email"
-                  required
-                />
-                <textarea
-                  name="message"
-                  class="form-control"
-                  placeholder="Message"
-                  rows="4"
-                  required
-                ></textarea>
-                <div class="contact-submit">
-                  <input
-                    type="submit"
-                    class="form-control submit"
-                    value="Send a message"
-                  />
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <div class="clearfix"></div>
+    <section id="single-project" class="wow fadeIn" data-wow-delay="1.7s">
+      <div class="container image-set">
+        <div class="row">
+          <a
+            href="img/art/sunset_cats.png"
+            data-lightbox="gallery"
+            class="col-md-4 col-sm-6 gallery-art"
+          >
+            <img src="img/art/sunset_cats.png" />
+          </a>
+          <a
+            href="img/art/mermaid_cave.png"
+            data-lightbox="gallery"
+            class="col-md-4 col-sm-6 gallery-art"
+          >
+            <img src="img/art/mermaid_cave.png" />
+          </a>
+          <a
+            href="img/projects/hiking.png"
+            data-lightbox="gallery"
+            class="col-md-4 col-sm-6 gallery-art"
+          >
+            <img src="img/projects/hiking.png" />
+          </a>
+        </div>
+        <div class="row">
+          <a
+            href="img/art/spring.png"
+            data-lightbox="gallery"
+            class="col-md-4 col-sm-6 gallery-art"
+          >
+            <img src="img/art/spring.png" />
+          </a>
+          <a
+            href="img/art/driving_pokemon.jpeg"
+            data-lightbox="gallery"
+            class="col-md-4 col-sm-6 gallery-art"
+          >
+            <img src="img/art/driving_pokemon.jpeg" />
+          </a>
+          <a
+            href="img/art/portrait_cat.jpg"
+            data-lightbox="gallery"
+            class="col-md-4 col-sm-6 gallery-art"
+          >
+            <img src="img/art/portrait_cat.jpg" />
+          </a>
+        </div>
+        <div class="row">
+          <a
+            href="img/art/forest.jpeg"
+            data-lightbox="gallery"
+            class="col-md-7 col-sm-7 gallery-art"
+          >
+            <img src="img/art/forest.jpeg" />
+          </a>
         </div>
       </div>
     </section>
